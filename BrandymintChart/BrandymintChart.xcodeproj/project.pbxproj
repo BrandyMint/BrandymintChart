@@ -18,6 +18,13 @@
 		7C193C2616B12263002E2D44 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C193C2516B12263002E2D44 /* Default@2x.png */; };
 		7C193C2816B12263002E2D44 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C193C2716B12263002E2D44 /* Default-568h@2x.png */; };
 		7C193C2B16B12263002E2D44 /* BrandymintChart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C2916B12263002E2D44 /* BrandymintChart.xcdatamodeld */; };
+		7C193C3216B123BE002E2D44 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C193C3116B123BE002E2D44 /* MainWindow.xib */; };
+		7C193C4216B126AA002E2D44 /* MGSplitCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C3D16B126AA002E2D44 /* MGSplitCornersView.m */; };
+		7C193C4316B126AA002E2D44 /* MGSplitDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C3F16B126AA002E2D44 /* MGSplitDividerView.m */; };
+		7C193C4416B126AA002E2D44 /* MGSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C4116B126AA002E2D44 /* MGSplitViewController.m */; };
+		7C193C4816B12759002E2D44 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C4716B12759002E2D44 /* RootViewController.m */; };
+		7C193C5116B12B77002E2D44 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C4F16B12B77002E2D44 /* DetailViewController.m */; };
+		7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C193C5016B12B77002E2D44 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,18 @@
 		7C193C2516B12263002E2D44 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7C193C2716B12263002E2D44 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7C193C2A16B12263002E2D44 /* BrandymintChart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrandymintChart.xcdatamodel; sourceTree = "<group>"; };
+		7C193C3116B123BE002E2D44 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		7C193C3C16B126AA002E2D44 /* MGSplitCornersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitCornersView.h; sourceTree = "<group>"; };
+		7C193C3D16B126AA002E2D44 /* MGSplitCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitCornersView.m; sourceTree = "<group>"; };
+		7C193C3E16B126AA002E2D44 /* MGSplitDividerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitDividerView.h; sourceTree = "<group>"; };
+		7C193C3F16B126AA002E2D44 /* MGSplitDividerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitDividerView.m; sourceTree = "<group>"; };
+		7C193C4016B126AA002E2D44 /* MGSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSplitViewController.h; sourceTree = "<group>"; };
+		7C193C4116B126AA002E2D44 /* MGSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSplitViewController.m; sourceTree = "<group>"; };
+		7C193C4616B12759002E2D44 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7C193C4716B12759002E2D44 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7C193C4E16B12B77002E2D44 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7C193C4F16B12B77002E2D44 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7C193C5016B12B77002E2D44 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +103,8 @@
 		7C193C1716B12263002E2D44 /* BrandymintChart */ = {
 			isa = PBXGroup;
 			children = (
+				7C193C4516B12709002E2D44 /* Controllers */,
+				7C193C3A16B12650002E2D44 /* 3rdParty */,
 				7C193C2016B12263002E2D44 /* AppDelegate.h */,
 				7C193C2116B12263002E2D44 /* AppDelegate.m */,
 				7C193C2916B12263002E2D44 /* BrandymintChart.xcdatamodeld */,
@@ -102,8 +123,42 @@
 				7C193C2316B12263002E2D44 /* Default.png */,
 				7C193C2516B12263002E2D44 /* Default@2x.png */,
 				7C193C2716B12263002E2D44 /* Default-568h@2x.png */,
+				7C193C3116B123BE002E2D44 /* MainWindow.xib */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C193C3A16B12650002E2D44 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				7C193C3B16B12668002E2D44 /* MGSplitViewControllers */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		7C193C3B16B12668002E2D44 /* MGSplitViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C193C3C16B126AA002E2D44 /* MGSplitCornersView.h */,
+				7C193C3D16B126AA002E2D44 /* MGSplitCornersView.m */,
+				7C193C3E16B126AA002E2D44 /* MGSplitDividerView.h */,
+				7C193C3F16B126AA002E2D44 /* MGSplitDividerView.m */,
+				7C193C4016B126AA002E2D44 /* MGSplitViewController.h */,
+				7C193C4116B126AA002E2D44 /* MGSplitViewController.m */,
+			);
+			path = MGSplitViewControllers;
+			sourceTree = "<group>";
+		};
+		7C193C4516B12709002E2D44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C193C4616B12759002E2D44 /* RootViewController.h */,
+				7C193C4716B12759002E2D44 /* RootViewController.m */,
+				7C193C4E16B12B77002E2D44 /* DetailViewController.h */,
+				7C193C4F16B12B77002E2D44 /* DetailViewController.m */,
+				7C193C5016B12B77002E2D44 /* DetailViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +216,8 @@
 				7C193C2416B12263002E2D44 /* Default.png in Resources */,
 				7C193C2616B12263002E2D44 /* Default@2x.png in Resources */,
 				7C193C2816B12263002E2D44 /* Default-568h@2x.png in Resources */,
+				7C193C3216B123BE002E2D44 /* MainWindow.xib in Resources */,
+				7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +231,11 @@
 				7C193C1E16B12263002E2D44 /* main.m in Sources */,
 				7C193C2216B12263002E2D44 /* AppDelegate.m in Sources */,
 				7C193C2B16B12263002E2D44 /* BrandymintChart.xcdatamodeld in Sources */,
+				7C193C4216B126AA002E2D44 /* MGSplitCornersView.m in Sources */,
+				7C193C4316B126AA002E2D44 /* MGSplitDividerView.m in Sources */,
+				7C193C4416B126AA002E2D44 /* MGSplitViewController.m in Sources */,
+				7C193C4816B12759002E2D44 /* RootViewController.m in Sources */,
+				7C193C5116B12B77002E2D44 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +308,14 @@
 		7C193C2F16B12263002E2D44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Denis Dubov (DVLA4WK9D2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B2BFF109-E614-466F-9521-770668BD05E7";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -257,10 +323,14 @@
 		7C193C3016B12263002E2D44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Denis Dubov (DVLA4WK9D2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B2BFF109-E614-466F-9521-770668BD05E7";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -284,6 +354,7 @@
 				7C193C3016B12263002E2D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

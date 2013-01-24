@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "MGSplitViewController.h"
 
 @implementation AppDelegate
+
+@synthesize window, splitViewController, rootViewController, detailViewController;
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
@@ -16,10 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    // Add the split view controller's view to the window and display.
+    window.rootViewController = splitViewController;
+    //[window addSubview:splitViewController.view];
+    [window makeKeyAndVisible];
+    
+    splitViewController.splitWidth = 2.0; // make it wide enough to actually drag!
+    splitViewController.allowsDraggingDivider = YES;
+    
+    //splitViewController.showsMasterInLandscape = YES;
+	//[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
+    
     return YES;
 }
 
