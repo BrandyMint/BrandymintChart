@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CF405A16B1E568007923FE /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF405816B1E568007923FE /* CardViewController.m */; };
+		18CF405B16B1E568007923FE /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF405916B1E568007923FE /* CardViewController.xib */; };
 		7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C0F16B12263002E2D44 /* UIKit.framework */; };
 		7C193C1216B12263002E2D44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C1116B12263002E2D44 /* Foundation.framework */; };
 		7C193C1416B12263002E2D44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C1316B12263002E2D44 /* CoreGraphics.framework */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18CF404C16B1E1FF007923FE /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		18CF405716B1E567007923FE /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		18CF405816B1E568007923FE /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		18CF405916B1E568007923FE /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		7C193C0B16B12263002E2D44 /* BrandymintChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandymintChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C193C0F16B12263002E2D44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C193C1116B12263002E2D44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CF404B16B1E1DF007923FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18CF404C16B1E1FF007923FE /* common.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		7C193C0016B12263002E2D44 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 		7C193C1716B12263002E2D44 /* BrandymintChart */ = {
 			isa = PBXGroup;
 			children = (
+				18CF404B16B1E1DF007923FE /* Common */,
 				7C193C4516B12709002E2D44 /* Controllers */,
 				7C193C3A16B12650002E2D44 /* 3rdParty */,
 				7C193C2016B12263002E2D44 /* AppDelegate.h */,
@@ -157,6 +172,9 @@
 				7C193C4E16B12B77002E2D44 /* DetailViewController.h */,
 				7C193C4F16B12B77002E2D44 /* DetailViewController.m */,
 				7C193C5016B12B77002E2D44 /* DetailViewController.xib */,
+				18CF405716B1E567007923FE /* CardViewController.h */,
+				18CF405816B1E568007923FE /* CardViewController.m */,
+				18CF405916B1E568007923FE /* CardViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +236,7 @@
 				7C193C2816B12263002E2D44 /* Default-568h@2x.png in Resources */,
 				7C193C3216B123BE002E2D44 /* MainWindow.xib in Resources */,
 				7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */,
+				18CF405B16B1E568007923FE /* CardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +255,7 @@
 				7C193C4416B126AA002E2D44 /* MGSplitViewController.m in Sources */,
 				7C193C4816B12759002E2D44 /* RootViewController.m in Sources */,
 				7C193C5116B12B77002E2D44 /* DetailViewController.m in Sources */,
+				18CF405A16B1E568007923FE /* CardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

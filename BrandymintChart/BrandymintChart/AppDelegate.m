@@ -20,17 +20,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Add the split view controller's view to the window and display.
     window.rootViewController = splitViewController;
-    //[window addSubview:splitViewController.view];
     [window makeKeyAndVisible];
     
-    splitViewController.splitWidth = 2.0; // make it wide enough to actually drag!
+    splitViewController.splitPosition = 250;
+    splitViewController.splitWidth = 1.0;
+    splitViewController.showsMasterInLandscape = YES;
+    splitViewController.showsMasterInPortrait = NO;
     splitViewController.allowsDraggingDivider = YES;
     
-    //splitViewController.showsMasterInLandscape = YES;
-	//[rootViewController performSelector:@selector(selectFirstRow) withObject:nil afterDelay:0];
-    
+    splitViewController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
+
     return YES;
 }
 

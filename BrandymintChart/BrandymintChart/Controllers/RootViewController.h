@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class DetailViewController;
+
 @interface RootViewController : UITableViewController
+{
+    DetailViewController *detailViewController;
+}
+
+@property (nonatomic, strong) IBOutlet DetailViewController *detailViewController;
 
 @end

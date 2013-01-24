@@ -10,6 +10,8 @@
 
 @implementation RootViewController
 
+@synthesize detailViewController;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

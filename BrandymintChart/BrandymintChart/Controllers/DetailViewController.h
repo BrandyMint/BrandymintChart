@@ -10,5 +10,12 @@
 #import "MGSplitViewController.h"
 
 @interface DetailViewController : UIViewController <MGSplitViewControllerDelegate>
+{
+    IBOutlet MGSplitViewController *splitController;
+}
+
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollCards;
+
+-(IBAction) showLeft;
 
 @end
