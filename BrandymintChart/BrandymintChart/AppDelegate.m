@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    window.rootViewController = splitViewController;
+    //window.rootViewController = splitViewController;
     [window makeKeyAndVisible];
     
     splitViewController.splitPosition = 250;
@@ -30,7 +30,7 @@
     splitViewController.allowsDraggingDivider = YES;
     
     splitViewController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
-
+    
     return YES;
 }
 

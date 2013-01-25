@@ -11,11 +11,12 @@
 
 @interface DetailViewController : UIViewController <MGSplitViewControllerDelegate>
 {
+    IBOutlet UIBarButtonItem *showHide;
     IBOutlet MGSplitViewController *splitController;
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollCards;
 
--(IBAction) showLeft;
+-(IBAction) showLeftPanel:(id)sender;
 
 @end

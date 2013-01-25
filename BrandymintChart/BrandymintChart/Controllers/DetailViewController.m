@@ -10,35 +10,37 @@
 #import "CardViewController.h"
 
 @interface DetailViewController ()
-
+@property (nonatomic, strong) NSMutableArray *pageViews;
 @end
 
 @implementation DetailViewController
 {
-    NSMutableArray *pageViews;
+    //NSMutableArray *pageViews;
+    bool stateLeftPanel;
+    int curPage;
+    
+    CGRect scrollViewRect;
+    CGRect scrollViewRectIncrease;
+    CGRect innerViewRect;
 }
 
 @synthesize scrollCards;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize pageViews = _pageViews;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    stateLeftPanel = NO;
+    curPage = 0;
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
-    //[self initScrollCards];
-    splitController.splitPosition = OPEN_MASTER_SPLITVIEW_POSITION;
+    scrollViewRect = scrollCards.frame;
+    scrollViewRectIncrease = CGRectMake(0, scrollViewRect.origin.y, self.view.frame.size.width - OPEN_MASTER_SPLITVIEW_POSITION , scrollViewRect.size.height);
+    
+    [self initScrollCards];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,19 +64,89 @@
 	return proposedPosition;
 }
 
--(IBAction) showLeft
+-(IBAction) showLeftPanel:(id)sender
 {
-    //[splitController setSplitPosition:0.0f animated:YES];
-    //splitController.showsMasterInLandscape = NO;
+    UIBarButtonItem *btn = (UIBarButtonItem*)sender;
+    
+    stateLeftPanel = !stateLeftPanel;
+
+    if(stateLeftPanel == YES)   {
+        //[splitController setSplitPosition:OPEN_MASTER_SPLITVIEW_POSITION animated:YES];
+        scrollCards.clipsToBounds = YES;
+        [self animateIncreaseWindows];
+        btn.title = @"Скрыть";
+    }
+    else    {
+        //[splitController setSplitPosition:CLOSE_MASTER_SPLITVIEW_POSITION animated:YES];
+        [self animateDecreaseWindows];
+        btn.title = @"Показать";
+    }
+}
+
+-(void) animateDecreaseWindows
+{
+    scrollCards.scrollEnabled = YES;
+    [self showAllWindowInScrollView];
+    
+    UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
+    
+    [UIView animateWithDuration:CLOSE_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+        splitController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
+        scrollCards.frame = scrollViewRect;
+        curView.frame = innerViewRect;
+        }completion:^(BOOL finished) {
+        scrollCards.clipsToBounds = NO;
+    }];
+}
+
+-(void) animateIncreaseWindows
+{
+    scrollCards.scrollEnabled = NO;
+    [self hideAllWindowWithoutIndexInScrollView:curPage];
+    
+    UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
+    innerViewRect = curView.frame;
+
+    [UIView animateWithDuration:OPEN_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+        splitController.splitPosition = OPEN_MASTER_SPLITVIEW_POSITION;
+        scrollCards.frame = scrollViewRectIncrease;
+        curView.frame = CGRectMake(innerViewRect.origin.x - 13.5, 0, scrollViewRectIncrease.size.width, scrollViewRectIncrease.size.height);    //ofs in next function = 13.5
+    }completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void) hideAllWindowWithoutIndexInScrollView:(int)index
+{
+    for(int loop = 0; loop < [self.pageViews count]; loop++)
+    {
+        if(loop != index)
+        {
+            ((UIViewController*)[self.pageViews objectAtIndex:loop]).view.hidden = YES;
+        }
+    }
+}
+
+-(void) showAllWindowInScrollView
+{
+    for(int loop = 0; loop < [self.pageViews count]; loop++)
+    {
+        ((UIViewController*)[self.pageViews objectAtIndex:loop]).view.hidden = NO;
+    }
 }
 
 -(void) initScrollCards
 {
-    pageViews = [[NSMutableArray alloc] init];
+    self.pageViews = [[NSMutableArray alloc] init];
+    
+    for (UIView *v in scrollCards.subviews) {
+        [v removeFromSuperview];
+    }
     
     CGFloat itemWidth = self.scrollCards.frame.size.width;
     CGFloat cardWidth = 877;
     CGFloat ofs = (itemWidth-cardWidth)/2;
+    NSLog(@"ofs=%f", ofs);
     
     for(int loop = 0; loop < 10; loop++)
     {
@@ -89,10 +161,11 @@
                                                 initWithNibName:@"CardViewController" bundle:[NSBundle mainBundle]];
         myController.view.frame = frame;
         
-        [pageViews addObject:myController];
+        [self.pageViews addObject:myController];
         [self.scrollCards addSubview:myController.view];
+        NSLog(@"=>%i", loop);
     }
-    
+
     self.scrollCards.contentSize = CGSizeMake(itemWidth * 10,
                                               self.scrollCards.frame.size.height);
     
@@ -105,10 +178,11 @@
     CGFloat scrollOfs = self.scrollCards.contentOffset.x;
     
     int curPageIndex = floor(scrollOfs/pageWidth - 0.5) + 1;
+    curPage = curPageIndex;
     CGFloat pageOfs = scrollOfs/pageWidth - curPageIndex; // -0.5..0.5
     
-    UIView* v1 = [self.scrollCards.subviews objectAtIndex:curPageIndex];
-    v1.alpha = 1.0 - fabs(pageOfs);
+    UIView* v1 = ((UIViewController*)[self.pageViews objectAtIndex:curPageIndex]).view; //[self.scrollCards.subviews objectAtIndex:curPageIndex];
+    v1.alpha = 1.0f - fabs(pageOfs);
     
     [self updatePageAlpha:curPageIndex];
 }
@@ -116,12 +190,12 @@
 -(void)updatePageAlpha:(int)pageIndex
 {
     if (pageIndex > 0){
-        UIView* v = [self.scrollCards.subviews objectAtIndex:pageIndex-1];
-        v.alpha = 0.5;
+        UIView* v = ((UIViewController*)[self.pageViews objectAtIndex:pageIndex-1]).view;
+        v.alpha = 0.5f;
     }
-    if (pageIndex < self.scrollCards.subviews.count-1){
-        UIView* v = [self.scrollCards.subviews objectAtIndex:pageIndex+1];
-        v.alpha = 0.5;
+    if (pageIndex < self.pageViews.count - 1){
+        UIView* v = ((UIViewController*)[self.pageViews objectAtIndex:pageIndex+1]).view;
+        v.alpha = 0.5f;
     }
 }
 
