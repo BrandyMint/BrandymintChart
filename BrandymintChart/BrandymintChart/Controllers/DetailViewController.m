@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import "CardViewController.h"
 
+#import "PieChartController.h"
+
 @interface DetailViewController ()
 @property (nonatomic, strong) NSMutableArray *pageViews;
 @end
@@ -41,6 +43,9 @@
     scrollViewRectIncrease = CGRectMake(0, scrollViewRect.origin.y, self.view.frame.size.width - OPEN_MASTER_SPLITVIEW_POSITION , scrollViewRect.size.height);
     
     [self initScrollCards];
+    
+    CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
+    [curController reloadCurrentController];
 }
 
 - (void)didReceiveMemoryWarning
@@ -157,13 +162,16 @@
         frame.size.width = cardWidth;
         frame.size.height = self.scrollCards.frame.size.height - 40;
         
-        CardViewController *myController = [[CardViewController alloc]
+        /*CardViewController *myController = [[CardViewController alloc]
                                                 initWithNibName:@"CardViewController" bundle:[NSBundle mainBundle]];
+        myController.view.frame = frame;*/
+        
+        PieChartController *myController = [[PieChartController alloc]
+                                            initWithNibName:@"PieChartController" bundle:[NSBundle mainBundle]];
         myController.view.frame = frame;
         
         [self.pageViews addObject:myController];
         [self.scrollCards addSubview:myController.view];
-        NSLog(@"=>%i", loop);
     }
 
     self.scrollCards.contentSize = CGSizeMake(itemWidth * 10,
@@ -178,6 +186,19 @@
     CGFloat scrollOfs = self.scrollCards.contentOffset.x;
     
     int curPageIndex = floor(scrollOfs/pageWidth - 0.5) + 1;
+    
+    if(curPageIndex != curPage) {
+        [((CardViewController*)[self.pageViews objectAtIndex:curPageIndex]) reloadCurrentController];
+        
+        if(curPageIndex > curPage)  {
+            [((CardViewController*)[self.pageViews objectAtIndex:curPageIndex - 1]) clearCurrentController];
+        }
+        else
+        {
+            [((CardViewController*)[self.pageViews objectAtIndex:curPageIndex + 1]) clearCurrentController];
+        }
+    }
+    
     curPage = curPageIndex;
     CGFloat pageOfs = scrollOfs/pageWidth - curPageIndex; // -0.5..0.5
     

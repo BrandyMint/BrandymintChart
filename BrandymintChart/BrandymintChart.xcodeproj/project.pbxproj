@@ -27,6 +27,10 @@
 		7C193C4816B12759002E2D44 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C4716B12759002E2D44 /* RootViewController.m */; };
 		7C193C5116B12B77002E2D44 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C193C4F16B12B77002E2D44 /* DetailViewController.m */; };
 		7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C193C5016B12B77002E2D44 /* DetailViewController.xib */; };
+		7C3055E416B67E3000BFA132 /* PieChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3055E216B67E3000BFA132 /* PieChartController.m */; };
+		7C3055E516B67E3000BFA132 /* PieChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C3055E316B67E3000BFA132 /* PieChartController.xib */; };
+		7C3055EA16B67F0A00BFA132 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3055E916B67F0A00BFA132 /* XYPieChart.m */; };
+		7C3055EC16B6857500BFA132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3055EB16B6857500BFA132 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,12 @@
 		7C193C4E16B12B77002E2D44 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		7C193C4F16B12B77002E2D44 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		7C193C5016B12B77002E2D44 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		7C3055E116B67E3000BFA132 /* PieChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartController.h; sourceTree = "<group>"; };
+		7C3055E216B67E3000BFA132 /* PieChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartController.m; sourceTree = "<group>"; };
+		7C3055E316B67E3000BFA132 /* PieChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PieChartController.xib; sourceTree = "<group>"; };
+		7C3055E816B67F0A00BFA132 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		7C3055E916B67F0A00BFA132 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		7C3055EB16B6857500BFA132 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3055EC16B6857500BFA132 /* QuartzCore.framework in Frameworks */,
 				7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */,
 				7C193C1216B12263002E2D44 /* Foundation.framework in Frameworks */,
 				7C193C1416B12263002E2D44 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +100,7 @@
 		7C193C0016B12263002E2D44 = {
 			isa = PBXGroup;
 			children = (
+				7C3055EB16B6857500BFA132 /* QuartzCore.framework */,
 				7C193C1716B12263002E2D44 /* BrandymintChart */,
 				7C193C0E16B12263002E2D44 /* Frameworks */,
 				7C193C0C16B12263002E2D44 /* Products */,
@@ -117,6 +129,7 @@
 		7C193C1716B12263002E2D44 /* BrandymintChart */ = {
 			isa = PBXGroup;
 			children = (
+				7C3055E616B67ED200BFA132 /* Submodules */,
 				18CF404B16B1E1DF007923FE /* Common */,
 				7C193C4516B12709002E2D44 /* Controllers */,
 				7C193C3A16B12650002E2D44 /* 3rdParty */,
@@ -167,6 +180,7 @@
 		7C193C4516B12709002E2D44 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C3055D916B67C9400BFA132 /* NativeControllers */,
 				7C193C4616B12759002E2D44 /* RootViewController.h */,
 				7C193C4716B12759002E2D44 /* RootViewController.m */,
 				7C193C4E16B12B77002E2D44 /* DetailViewController.h */,
@@ -177,6 +191,33 @@
 				18CF405916B1E568007923FE /* CardViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C3055D916B67C9400BFA132 /* NativeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C3055E116B67E3000BFA132 /* PieChartController.h */,
+				7C3055E216B67E3000BFA132 /* PieChartController.m */,
+				7C3055E316B67E3000BFA132 /* PieChartController.xib */,
+			);
+			path = NativeControllers;
+			sourceTree = "<group>";
+		};
+		7C3055E616B67ED200BFA132 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				7C3055E716B67EF500BFA132 /* XYPieChart */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		7C3055E716B67EF500BFA132 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				7C3055E816B67F0A00BFA132 /* XYPieChart.h */,
+				7C3055E916B67F0A00BFA132 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +278,7 @@
 				7C193C3216B123BE002E2D44 /* MainWindow.xib in Resources */,
 				7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */,
 				18CF405B16B1E568007923FE /* CardViewController.xib in Resources */,
+				7C3055E516B67E3000BFA132 /* PieChartController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +298,8 @@
 				7C193C4816B12759002E2D44 /* RootViewController.m in Sources */,
 				7C193C5116B12B77002E2D44 /* DetailViewController.m in Sources */,
 				18CF405A16B1E568007923FE /* CardViewController.m in Sources */,
+				7C3055E416B67E3000BFA132 /* PieChartController.m in Sources */,
+				7C3055EA16B67F0A00BFA132 /* XYPieChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

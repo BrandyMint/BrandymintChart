@@ -10,4 +10,7 @@
 
 @interface CardViewController : UIViewController
 
+-(void) reloadCurrentController;
+-(void) clearCurrentController;
+
 @end
