@@ -27,7 +27,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void) reloadCurrentController
+{
+    if(piChart != nil) return;
     piChart = [ShinobiChart lineChartWithFrame:self.baseView.bounds];
     
     //Enter your trial license key here
@@ -46,20 +56,9 @@
     self.baseView.backgroundColor = piChart.backgroundColor;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void) reloadCurrentController
-{
-    
-}
-
 -(void) clearCurrentController
 {
-    
+    //[piChart removeFromSuperview];
 }
 
 -(void) viewWillLayoutSubviews

@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "CardViewController.h"
+#import "MBProgressHUD.h"
 
 #import "PieChartController.h"
 #import "PlotWithLineController.h"
@@ -24,6 +25,8 @@
 
 #import "KeepEdgeController.h"
 
+#import "WebPlatformController.h"
+
 @interface DetailViewController ()
 @property (nonatomic, strong) NSMutableArray *pageViews;
 @end
@@ -39,6 +42,8 @@
     CGRect innerViewRect;
     
     NSMutableArray *controllers;
+    
+    MBProgressHUD *HUD;
 }
 
 @synthesize scrollCards;
@@ -221,11 +226,6 @@
                                               self.scrollCards.frame.size.height);
     scrollCards.contentOffset = CGPointMake(0, 0);  //Перематываем на первый элемент при каждой инициализации
     
-    if(controllers.count > 0)   {
-        CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
-        [curController reloadCurrentController];
-    }
-    
     [self updatePageAlpha:0];
 }
 
@@ -333,6 +333,18 @@
         }
         break;
             
+        case 4:
+        {
+            controllers = [[NSMutableArray alloc] init];
+            for(int loop = 0; loop < 6; loop++)
+            {
+                WebPlatformController *myPieController = [[WebPlatformController alloc]
+                                                       initWithNibName:@"WebPlatformController" bundle:[NSBundle mainBundle] indexIn:loop];
+                [controllers addObject:myPieController];
+            }
+        }
+        break;
+            
         default:
             [controllers removeAllObjects];
             break;
@@ -343,6 +355,16 @@
     }
     
     [self initScrollCards];
+    
+    if(controllers.count > 0)   {
+        CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
+        [curController reloadCurrentController];
+        if(controllers.count > 1)
+        {
+            curController = (CardViewController *)[self.pageViews objectAtIndex:1];
+            [curController reloadCurrentController];
+        }
+    }
 }
 
 @end

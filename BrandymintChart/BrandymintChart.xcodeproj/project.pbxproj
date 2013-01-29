@@ -83,6 +83,9 @@
 		18CE2B9716B8635000C60EC9 /* DemoScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8416B8635000C60EC9 /* DemoScatterChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18CE2B9816B8635000C60EC9 /* DemoTimeSeriesChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8616B8635000C60EC9 /* DemoTimeSeriesChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18CE2C1D16B8648C00C60EC9 /* libIPhoneCharting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE2B9916B8648C00C60EC9 /* libIPhoneCharting.a */; };
+		18CE2C2216B875FD00C60EC9 /* WebPlatformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2C2016B875FD00C60EC9 /* WebPlatformController.m */; };
+		18CE2C2316B875FD00C60EC9 /* WebPlatformController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CE2C2116B875FD00C60EC9 /* WebPlatformController.xib */; };
+		18CE2C2D16B87C1600C60EC9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2C2616B87C1600C60EC9 /* MBProgressHUD.m */; };
 		18CF405A16B1E568007923FE /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF405816B1E568007923FE /* CardViewController.m */; };
 		18CF405B16B1E568007923FE /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF405916B1E568007923FE /* CardViewController.xib */; };
 		7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C0F16B12263002E2D44 /* UIKit.framework */; };
@@ -121,6 +124,16 @@
 		7CC8BE4A16B80EF70019C59F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE4816B80EF70019C59F /* Icon.png */; };
 		7CC8BE4B16B80EF70019C59F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE4916B80EF70019C59F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CE2C2F16B87C1600C60EC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CE2C2716B87C1600C60EC9 /* MBProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D286A7491518C70F00E13FB8;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18B732A616B82A1200B25691 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
@@ -383,6 +396,12 @@
 		18CE2C1A16B8648C00C60EC9 /* IPCValueAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCValueAxis.h; sourceTree = "<group>"; };
 		18CE2C1B16B8648C00C60EC9 /* IPCXYRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCXYRender.h; sourceTree = "<group>"; };
 		18CE2C1C16B8648C00C60EC9 /* IPhoneCharting_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneCharting_Prefix.pch; sourceTree = "<group>"; };
+		18CE2C1F16B875FD00C60EC9 /* WebPlatformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPlatformController.h; sourceTree = "<group>"; };
+		18CE2C2016B875FD00C60EC9 /* WebPlatformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPlatformController.m; sourceTree = "<group>"; };
+		18CE2C2116B875FD00C60EC9 /* WebPlatformController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebPlatformController.xib; sourceTree = "<group>"; };
+		18CE2C2516B87C1600C60EC9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		18CE2C2616B87C1600C60EC9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		18CE2C2716B87C1600C60EC9 /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		18CF404C16B1E1FF007923FE /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		18CF405716B1E567007923FE /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		18CF405816B1E568007923FE /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
@@ -913,6 +932,34 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		18CE2C1E16B875CB00C60EC9 /* WebControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2C1F16B875FD00C60EC9 /* WebPlatformController.h */,
+				18CE2C2016B875FD00C60EC9 /* WebPlatformController.m */,
+				18CE2C2116B875FD00C60EC9 /* WebPlatformController.xib */,
+			);
+			path = WebControllers;
+			sourceTree = "<group>";
+		};
+		18CE2C2416B87C1600C60EC9 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2C2516B87C1600C60EC9 /* MBProgressHUD.h */,
+				18CE2C2616B87C1600C60EC9 /* MBProgressHUD.m */,
+				18CE2C2716B87C1600C60EC9 /* MBProgressHUD.xcodeproj */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		18CE2C2816B87C1600C60EC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2C3016B87C1600C60EC9 /* libMBProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18CF404B16B1E1DF007923FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -992,6 +1039,7 @@
 		7C193C3A16B12650002E2D44 /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				18CE2C2416B87C1600C60EC9 /* MBProgressHUD */,
 				7C193C3B16B12668002E2D44 /* MGSplitViewControllers */,
 			);
 			path = 3rdParty;
@@ -1013,6 +1061,7 @@
 		7C193C4516B12709002E2D44 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18CE2C1E16B875CB00C60EC9 /* WebControllers */,
 				7C3055D916B67C9400BFA132 /* NativeControllers */,
 				7C193C4616B12759002E2D44 /* RootViewController.h */,
 				7C193C4716B12759002E2D44 /* RootViewController.m */,
@@ -1123,12 +1172,28 @@
 			mainGroup = 7C193C0016B12263002E2D44;
 			productRefGroup = 7C193C0C16B12263002E2D44 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18CE2C2816B87C1600C60EC9 /* Products */;
+					ProjectRef = 18CE2C2716B87C1600C60EC9 /* MBProgressHUD.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7C193C0A16B12263002E2D44 /* BrandymintChart */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18CE2C3016B87C1600C60EC9 /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 18CE2C2F16B87C1600C60EC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7C193C0916B12263002E2D44 /* Resources */ = {
@@ -1173,6 +1238,7 @@
 				18B7338616B84DFC00B25691 /* logo.png in Resources */,
 				18B7338C16B84E0D00B25691 /* SectionsController.xib in Resources */,
 				18CE2B5E16B8628C00C60EC9 /* KeepEdgeController.xib in Resources */,
+				18CE2C2316B875FD00C60EC9 /* WebPlatformController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1248,6 +1314,8 @@
 				18CE2B9616B8635000C60EC9 /* DemoPieChart.m in Sources */,
 				18CE2B9716B8635000C60EC9 /* DemoScatterChart.m in Sources */,
 				18CE2B9816B8635000C60EC9 /* DemoTimeSeriesChart.m in Sources */,
+				18CE2C2216B875FD00C60EC9 /* WebPlatformController.m in Sources */,
+				18CE2C2D16B87C1600C60EC9 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

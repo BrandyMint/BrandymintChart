@@ -28,6 +28,27 @@
 {
     [super viewDidLoad];
     
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)sChartRenderFinished:(ShinobiChart *)chart {
+    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    
+    //use multi-line title on the yAxis for iPad
+    if (iPad) {
+        chart.yAxis.titleLabel.numberOfLines = 0;
+        [chart.yAxis.titleLabel sizeToFit];
+    }
+}
+
+-(void) reloadCurrentController
+{
+    if(barChart != nil) return;
     //Create a chart object capable of displaying countries by area using bars
     barChart = [ShinobiChart barChartForCountryByAreaWithFrame:self.baseView.bounds];
     
@@ -50,30 +71,9 @@
     self.baseView.backgroundColor = barChart.backgroundColor;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)sChartRenderFinished:(ShinobiChart *)chart {
-    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-    
-    //use multi-line title on the yAxis for iPad
-    if (iPad) {
-        chart.yAxis.titleLabel.numberOfLines = 0;
-        [chart.yAxis.titleLabel sizeToFit];
-    }
-}
-
--(void) reloadCurrentController
-{
-    
-}
-
 -(void) clearCurrentController
 {
-    
+    //[barChart removeFromSuperview];
 }
 
 -(void) viewWillLayoutSubviews

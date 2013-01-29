@@ -28,7 +28,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)sChart:(ShinobiChart *)chart alterTickMark:(SChartTickMark *)tickMark beforeAddingToAxis:(SChartAxis *)axis {
+    if (chart.yAxis != axis && tickMark.value > 30.f) {
+        //Limit second y-axis labels to max of 30
+        tickMark.tickLabel.text = @"";
+        tickMark.tickMarkView.hidden = YES;
+    }
+}
+
+-(void) reloadCurrentController
+{
+    if(columnChart != nil) return;
     //Create a chart object capable of displaying UK weather data using columns
     columnChart = [ShinobiChart columnChartForWeatherWithFrame:self.baseView.bounds];//view.bounds];
     columnChart.title = @"Monthly UK Weather Summary";
@@ -50,28 +68,9 @@
     self.baseView.backgroundColor = columnChart.theme.chartStyle.backgroundColor;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)sChart:(ShinobiChart *)chart alterTickMark:(SChartTickMark *)tickMark beforeAddingToAxis:(SChartAxis *)axis {
-    if (chart.yAxis != axis && tickMark.value > 30.f) {
-        //Limit second y-axis labels to max of 30
-        tickMark.tickLabel.text = @"";
-        tickMark.tickMarkView.hidden = YES;
-    }
-}
-
--(void) reloadCurrentController
-{
-    
-}
-
 -(void) clearCurrentController
 {
-    
+    //[columnChart removeFromSuperview];
 }
 
 -(void) viewWillLayoutSubviews

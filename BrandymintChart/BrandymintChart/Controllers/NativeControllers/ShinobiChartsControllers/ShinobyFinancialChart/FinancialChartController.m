@@ -31,44 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-    
-    CGRect frame = self.view.bounds;
-    
-    //alter chart frame based on device
-    if (iPad) {
-        frame.origin.x += 10;
-        frame.origin.y += 50;
-        frame.size.width -= 50;
-        frame.size.height -= 100;
-    } else {
-        frame = self.view.bounds;
-    }
-    frame = self.baseView.bounds;
-    //Create a chart object capable of displaying countries by area using bars
-    financialChart = [ShinobiChart candlestickChartForStockData:frame];
-    
-    //Enter your trial license key here
-    financialChart.licenseKey = @"hjWhq0JgoOgvvZ5MjAxMzAyMjhpbmZvQHNoaW5vYmljb250cm9scy5jb20=BEOZ6VzrCBEs5cpeIODa/KY2+rBP4OJvMk+I61NMPtItTrL+AE8V9HRUduAeax45WgkOpsX9NA9SRavZtn5D6wmWnZhvEBLohM8MYTWv4C93Ebtl79iWdNcbakVsELBauhP9U0SXqs5vG1jJuIWO2MmZK5nI=BQxSUisl3BaWf/7myRmmlIjRnMU2cA7q+/03ZX9wdj30RzapYANf51ee3Pi8m2rVW6aD7t6Hi4Qy5vv9xpaQYXF5T7XzsafhzS3hbBokp36BoJZg8IrceBj742nQajYyV7trx5GIw9jy/V6r0bvctKYwTim7Kzq+YPWGMtqtQoU=PFJTQUtleVZhbHVlPjxNb2R1bHVzPnh6YlRrc2dYWWJvQUh5VGR6dkNzQXUrUVAxQnM5b2VrZUxxZVdacnRFbUx3OHZlWStBK3pteXg4NGpJbFkzT2hGdlNYbHZDSjlKVGZQTTF4S2ZweWZBVXBGeXgxRnVBMThOcDNETUxXR1JJbTJ6WXA3a1YyMEdYZGU3RnJyTHZjdGhIbW1BZ21PTTdwMFBsNWlSKzNVMDg5M1N4b2hCZlJ5RHdEeE9vdDNlMD08L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+ ";
-    
-    //We want to use a darker theme
-    financialChart.theme = [SChartDarkTheme new];
-    financialChart.title = @"Historical Nasdaq Prices - Apple Inc. (AAPL)";
-    
-    //Create our Apple stock data and assign it to our datasource
-    appleStockData = [AppleStockData new];
-    datasource = [Datasource4 new];
-    datasource.stockData = appleStockData;
-    financialChart.datasource = datasource;
-    
-    //Set this controller to be the delegate for our chart
-    financialChart.delegate = self;
-    [self.baseView addSubview:financialChart];
-    
-    self.baseView.backgroundColor = financialChart.backgroundColor;
-    
-    firstChartRender = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -163,12 +125,49 @@
 
 -(void) reloadCurrentController
 {
+    if(financialChart != nil) return;
+    BOOL iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
     
+    CGRect frame = self.view.bounds;
+    
+    //alter chart frame based on device
+    if (iPad) {
+        frame.origin.x += 10;
+        frame.origin.y += 50;
+        frame.size.width -= 50;
+        frame.size.height -= 100;
+    } else {
+        frame = self.view.bounds;
+    }
+    frame = self.baseView.bounds;
+    //Create a chart object capable of displaying countries by area using bars
+    financialChart = [ShinobiChart candlestickChartForStockData:frame];
+    
+    //Enter your trial license key here
+    financialChart.licenseKey = @"hjWhq0JgoOgvvZ5MjAxMzAyMjhpbmZvQHNoaW5vYmljb250cm9scy5jb20=BEOZ6VzrCBEs5cpeIODa/KY2+rBP4OJvMk+I61NMPtItTrL+AE8V9HRUduAeax45WgkOpsX9NA9SRavZtn5D6wmWnZhvEBLohM8MYTWv4C93Ebtl79iWdNcbakVsELBauhP9U0SXqs5vG1jJuIWO2MmZK5nI=BQxSUisl3BaWf/7myRmmlIjRnMU2cA7q+/03ZX9wdj30RzapYANf51ee3Pi8m2rVW6aD7t6Hi4Qy5vv9xpaQYXF5T7XzsafhzS3hbBokp36BoJZg8IrceBj742nQajYyV7trx5GIw9jy/V6r0bvctKYwTim7Kzq+YPWGMtqtQoU=PFJTQUtleVZhbHVlPjxNb2R1bHVzPnh6YlRrc2dYWWJvQUh5VGR6dkNzQXUrUVAxQnM5b2VrZUxxZVdacnRFbUx3OHZlWStBK3pteXg4NGpJbFkzT2hGdlNYbHZDSjlKVGZQTTF4S2ZweWZBVXBGeXgxRnVBMThOcDNETUxXR1JJbTJ6WXA3a1YyMEdYZGU3RnJyTHZjdGhIbW1BZ21PTTdwMFBsNWlSKzNVMDg5M1N4b2hCZlJ5RHdEeE9vdDNlMD08L01vZHVsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+ ";
+    
+    //We want to use a darker theme
+    financialChart.theme = [SChartDarkTheme new];
+    financialChart.title = @"Historical Nasdaq Prices - Apple Inc. (AAPL)";
+    
+    //Create our Apple stock data and assign it to our datasource
+    appleStockData = [AppleStockData new];
+    datasource = [Datasource4 new];
+    datasource.stockData = appleStockData;
+    financialChart.datasource = datasource;
+    
+    //Set this controller to be the delegate for our chart
+    financialChart.delegate = self;
+    [self.baseView addSubview:financialChart];
+    
+    self.baseView.backgroundColor = financialChart.backgroundColor;
+    
+    firstChartRender = YES;
 }
 
 -(void) clearCurrentController
 {
-    
+    //[financialChart removeFromSuperview];
 }
 
 -(void) viewWillLayoutSubviews

@@ -21,8 +21,8 @@
 {
     [super viewDidLoad];
     
-    arrayTitle = [[NSArray alloc] initWithObjects:@"iOS Plot", @"Shinoby Charts", @"Shinoby Grids", @"Keep Edge", nil];
-    arrayDescription = [[NSArray alloc] initWithObjects:@"native library", @"native library", @"native library", @"cross-platform library", nil];
+    arrayTitle = [[NSArray alloc] initWithObjects:@"iOS Plot", @"Shinoby Charts", @"Shinoby Grids", @"Keep Edge", @"Hightcharts JS", nil];
+    arrayDescription = [[NSArray alloc] initWithObjects:@"native library", @"native library", @"native library", @"cross-platform library", @"cross-platform web library", nil];
 }
 
 -(void) viewWillAppear:(BOOL)animated

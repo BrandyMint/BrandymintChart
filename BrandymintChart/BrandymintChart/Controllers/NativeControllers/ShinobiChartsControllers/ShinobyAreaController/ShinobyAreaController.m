@@ -28,7 +28,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+-(void) reloadCurrentController
+{
+    if(areaChart != nil) return;
     
+    NSLog(@"!!!!!!!!!!");
     //Create a chart object that displays medal data using stacked areas
     areaChart = [ShinobiChart areaChartWithFrame:self.baseView.bounds];
     areaChart.title = @"London 2012 - Medal Table Top Ten";
@@ -48,19 +59,9 @@
     self.baseView.backgroundColor = areaChart.backgroundColor;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
--(void) reloadCurrentController
-{
-    
-}
-
 -(void) clearCurrentController
 {
-    
+    //[areaChart removeFromSuperview];
 }
 
 -(void) viewWillLayoutSubviews
