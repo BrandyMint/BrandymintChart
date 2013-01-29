@@ -7,6 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B732A716B82A1200B25691 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B732A616B82A1200B25691 /* ShinobiCharts.framework */; };
+		18B732A916B82A2C00B25691 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B732A816B82A2C00B25691 /* OpenGLES.framework */; };
+		18B732AB16B82A3D00B25691 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B732AA16B82A3D00B25691 /* Security.framework */; };
+		18B732C916B82E1F00B25691 /* Datasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732C116B82E1F00B25691 /* Datasource.m */; };
+		18B732CA16B82E1F00B25691 /* London2012MedalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732C316B82E1F00B25691 /* London2012MedalData.m */; };
+		18B732CB16B82E1F00B25691 /* ShinobiChart+AreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732C616B82E1F00B25691 /* ShinobiChart+AreaChart.m */; };
+		18B732CC16B82E1F00B25691 /* UIColor+AreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732C816B82E1F00B25691 /* UIColor+AreaChart.m */; };
+		18B732D016B82E3B00B25691 /* ShinobyAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732CE16B82E3B00B25691 /* ShinobyAreaController.m */; };
+		18B732D116B82E3B00B25691 /* ShinobyAreaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B732CF16B82E3B00B25691 /* ShinobyAreaController.xib */; };
+		18B732E916B831C700B25691 /* Datasource2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732E416B831C700B25691 /* Datasource2.m */; };
+		18B732EA16B831C700B25691 /* ShinobiChart+BarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732E616B831C700B25691 /* ShinobiChart+BarChart.m */; };
+		18B732EB16B831C700B25691 /* TopTenCountriesAreaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732E816B831C700B25691 /* TopTenCountriesAreaData.m */; };
+		18B732EF16B831E600B25691 /* ShinobyBarChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732ED16B831E600B25691 /* ShinobyBarChartController.m */; };
+		18B732F016B831E600B25691 /* ShinobyBarChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B732EE16B831E600B25691 /* ShinobyBarChartController.xib */; };
+		18B732FE16B834FD00B25691 /* Datasource3.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732F816B834FD00B25691 /* Datasource3.m */; };
+		18B732FF16B834FD00B25691 /* ShinobiChart+columnChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732FA16B834FD00B25691 /* ShinobiChart+columnChart.m */; };
+		18B7330016B834FD00B25691 /* UKWeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B732FC16B834FD00B25691 /* UKWeatherData.m */; };
+		18B7330416B8354500B25691 /* ShinobyColumnChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7330216B8354400B25691 /* ShinobyColumnChartController.m */; };
+		18B7330516B8354500B25691 /* ShinobyColumnChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7330316B8354400B25691 /* ShinobyColumnChartController.xib */; };
+		18B7331016B837DD00B25691 /* appleData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 18B7330816B837DD00B25691 /* appleData.csv */; };
+		18B7331116B837DD00B25691 /* AppleStockData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7330A16B837DD00B25691 /* AppleStockData.m */; };
+		18B7331216B837DD00B25691 /* Datasource4.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7330C16B837DD00B25691 /* Datasource4.m */; };
+		18B7331316B837DD00B25691 /* ShinobiChart+CandlestickChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7330E16B837DD00B25691 /* ShinobiChart+CandlestickChart.m */; };
+		18B7331716B8380100B25691 /* FinancialChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7331516B8380100B25691 /* FinancialChartController.m */; };
+		18B7331816B8380100B25691 /* FinancialChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7331616B8380100B25691 /* FinancialChartController.xib */; };
+		18B7332B16B83E9B00B25691 /* Datasource5.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7332416B83E9B00B25691 /* Datasource5.m */; };
+		18B7332C16B83E9B00B25691 /* PI50K_DP.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 18B7332616B83E9B00B25691 /* PI50K_DP.TXT */; };
+		18B7332D16B83E9B00B25691 /* PiNumberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7332816B83E9B00B25691 /* PiNumberData.m */; };
+		18B7332E16B83E9B00B25691 /* ShinobiChart+LineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7332A16B83E9B00B25691 /* ShinobiChart+LineChart.m */; };
+		18B7333016B83EB100B25691 /* pi.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7332F16B83EB100B25691 /* pi.png */; };
+		18B7333416B83EEA00B25691 /* LargeDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7333216B83EEA00B25691 /* LargeDataController.m */; };
+		18B7333516B83EEA00B25691 /* LargeDataController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7333316B83EEA00B25691 /* LargeDataController.xib */; };
+		18B7334316B840BE00B25691 /* Datasource6.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7333E16B840BE00B25691 /* Datasource6.m */; };
+		18B7334416B840BE00B25691 /* MobileBrowserUsageStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7334016B840BE00B25691 /* MobileBrowserUsageStats.m */; };
+		18B7334516B840BE00B25691 /* ShinobiChart+LineChart2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7334216B840BE00B25691 /* ShinobiChart+LineChart2.m */; };
+		18B7334916B840D400B25691 /* LineChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7334716B840D400B25691 /* LineChartController.m */; };
+		18B7334A16B840D400B25691 /* LineChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7334816B840D400B25691 /* LineChartController.xib */; };
+		18B7335B16B846CD00B25691 /* ShinobiGrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7335A16B846CD00B25691 /* ShinobiGrids.framework */; };
+		18B7336616B84AEF00B25691 /* DataSource8.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7336316B84AEF00B25691 /* DataSource8.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B7336716B84AEF00B25691 /* ios-linen.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7336416B84AEF00B25691 /* ios-linen.png */; };
+		18B7336816B84AEF00B25691 /* logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7336516B84AEF00B25691 /* logo_black.png */; };
+		18B7336C16B84B0200B25691 /* LargeDataController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7336A16B84B0200B25691 /* LargeDataController2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B7336D16B84B0200B25691 /* LargeDataController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7336B16B84B0200B25691 /* LargeDataController2.xib */; };
+		18B7338016B84DFC00B25691 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337616B84DFC00B25691 /* Default-Landscape~ipad.png */; };
+		18B7338116B84DFC00B25691 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337716B84DFC00B25691 /* Default-Portrait~ipad.png */; };
+		18B7338216B84DFC00B25691 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337816B84DFC00B25691 /* Default.png */; };
+		18B7338316B84DFC00B25691 /* icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337916B84DFC00B25691 /* icon_retina.png */; };
+		18B7338416B84DFC00B25691 /* icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337A16B84DFC00B25691 /* icon_small.png */; };
+		18B7338516B84DFC00B25691 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337B16B84DFC00B25691 /* icon.png */; };
+		18B7338616B84DFC00B25691 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7337C16B84DFC00B25691 /* logo.png */; };
+		18B7338716B84DFC00B25691 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7337E16B84DFC00B25691 /* Stock.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B7338B16B84E0D00B25691 /* SectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7338916B84E0D00B25691 /* SectionsController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18B7338C16B84E0D00B25691 /* SectionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7338A16B84E0D00B25691 /* SectionsController.xib */; };
+		18B7338F16B8528200B25691 /* DataSource11.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7338E16B8528100B25691 /* DataSource11.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18CF405A16B1E568007923FE /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF405816B1E568007923FE /* CardViewController.m */; };
 		18CF405B16B1E568007923FE /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF405916B1E568007923FE /* CardViewController.xib */; };
 		7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C0F16B12263002E2D44 /* UIKit.framework */; };
@@ -47,6 +101,96 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18B732A616B82A1200B25691 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		18B732A816B82A2C00B25691 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		18B732AA16B82A3D00B25691 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18B732C016B82E1F00B25691 /* Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource.h; sourceTree = "<group>"; };
+		18B732C116B82E1F00B25691 /* Datasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource.m; sourceTree = "<group>"; };
+		18B732C216B82E1F00B25691 /* London2012MedalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = London2012MedalData.h; sourceTree = "<group>"; };
+		18B732C316B82E1F00B25691 /* London2012MedalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = London2012MedalData.m; sourceTree = "<group>"; };
+		18B732C416B82E1F00B25691 /* MedalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalData.h; sourceTree = "<group>"; };
+		18B732C516B82E1F00B25691 /* ShinobiChart+AreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+AreaChart.h"; sourceTree = "<group>"; };
+		18B732C616B82E1F00B25691 /* ShinobiChart+AreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+AreaChart.m"; sourceTree = "<group>"; };
+		18B732C716B82E1F00B25691 /* UIColor+AreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AreaChart.h"; sourceTree = "<group>"; };
+		18B732C816B82E1F00B25691 /* UIColor+AreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AreaChart.m"; sourceTree = "<group>"; };
+		18B732CD16B82E3B00B25691 /* ShinobyAreaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobyAreaController.h; sourceTree = "<group>"; };
+		18B732CE16B82E3B00B25691 /* ShinobyAreaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobyAreaController.m; sourceTree = "<group>"; };
+		18B732CF16B82E3B00B25691 /* ShinobyAreaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShinobyAreaController.xib; sourceTree = "<group>"; };
+		18B732E216B831C700B25691 /* CountriesAreaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountriesAreaData.h; sourceTree = "<group>"; };
+		18B732E316B831C700B25691 /* Datasource2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource2.h; sourceTree = "<group>"; };
+		18B732E416B831C700B25691 /* Datasource2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource2.m; sourceTree = "<group>"; };
+		18B732E516B831C700B25691 /* ShinobiChart+BarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+BarChart.h"; sourceTree = "<group>"; };
+		18B732E616B831C700B25691 /* ShinobiChart+BarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+BarChart.m"; sourceTree = "<group>"; };
+		18B732E716B831C700B25691 /* TopTenCountriesAreaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTenCountriesAreaData.h; sourceTree = "<group>"; };
+		18B732E816B831C700B25691 /* TopTenCountriesAreaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTenCountriesAreaData.m; sourceTree = "<group>"; };
+		18B732EC16B831E600B25691 /* ShinobyBarChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobyBarChartController.h; sourceTree = "<group>"; };
+		18B732ED16B831E600B25691 /* ShinobyBarChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobyBarChartController.m; sourceTree = "<group>"; };
+		18B732EE16B831E600B25691 /* ShinobyBarChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShinobyBarChartController.xib; sourceTree = "<group>"; };
+		18B732F716B834FD00B25691 /* Datasource3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource3.h; sourceTree = "<group>"; };
+		18B732F816B834FD00B25691 /* Datasource3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource3.m; sourceTree = "<group>"; };
+		18B732F916B834FD00B25691 /* ShinobiChart+columnChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+columnChart.h"; sourceTree = "<group>"; };
+		18B732FA16B834FD00B25691 /* ShinobiChart+columnChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+columnChart.m"; sourceTree = "<group>"; };
+		18B732FB16B834FD00B25691 /* UKWeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKWeatherData.h; sourceTree = "<group>"; };
+		18B732FC16B834FD00B25691 /* UKWeatherData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKWeatherData.m; sourceTree = "<group>"; };
+		18B732FD16B834FD00B25691 /* WeatherData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherData.h; sourceTree = "<group>"; };
+		18B7330116B8354300B25691 /* ShinobyColumnChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobyColumnChartController.h; sourceTree = "<group>"; };
+		18B7330216B8354400B25691 /* ShinobyColumnChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobyColumnChartController.m; sourceTree = "<group>"; };
+		18B7330316B8354400B25691 /* ShinobyColumnChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShinobyColumnChartController.xib; sourceTree = "<group>"; };
+		18B7330816B837DD00B25691 /* appleData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = appleData.csv; sourceTree = "<group>"; };
+		18B7330916B837DD00B25691 /* AppleStockData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStockData.h; sourceTree = "<group>"; };
+		18B7330A16B837DD00B25691 /* AppleStockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStockData.m; sourceTree = "<group>"; };
+		18B7330B16B837DD00B25691 /* Datasource4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource4.h; sourceTree = "<group>"; };
+		18B7330C16B837DD00B25691 /* Datasource4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource4.m; sourceTree = "<group>"; };
+		18B7330D16B837DD00B25691 /* ShinobiChart+CandlestickChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+CandlestickChart.h"; sourceTree = "<group>"; };
+		18B7330E16B837DD00B25691 /* ShinobiChart+CandlestickChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+CandlestickChart.m"; sourceTree = "<group>"; };
+		18B7330F16B837DD00B25691 /* StockData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockData.h; sourceTree = "<group>"; };
+		18B7331416B8380100B25691 /* FinancialChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialChartController.h; sourceTree = "<group>"; };
+		18B7331516B8380100B25691 /* FinancialChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialChartController.m; sourceTree = "<group>"; };
+		18B7331616B8380100B25691 /* FinancialChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialChartController.xib; sourceTree = "<group>"; };
+		18B7332316B83E9B00B25691 /* Datasource5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource5.h; sourceTree = "<group>"; };
+		18B7332416B83E9B00B25691 /* Datasource5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource5.m; sourceTree = "<group>"; };
+		18B7332516B83E9B00B25691 /* NumberData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberData.h; sourceTree = "<group>"; };
+		18B7332616B83E9B00B25691 /* PI50K_DP.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PI50K_DP.TXT; sourceTree = "<group>"; };
+		18B7332716B83E9B00B25691 /* PiNumberData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiNumberData.h; sourceTree = "<group>"; };
+		18B7332816B83E9B00B25691 /* PiNumberData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiNumberData.m; sourceTree = "<group>"; };
+		18B7332916B83E9B00B25691 /* ShinobiChart+LineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+LineChart.h"; sourceTree = "<group>"; };
+		18B7332A16B83E9B00B25691 /* ShinobiChart+LineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+LineChart.m"; sourceTree = "<group>"; };
+		18B7332F16B83EB100B25691 /* pi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pi.png; sourceTree = "<group>"; };
+		18B7333116B83EEA00B25691 /* LargeDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeDataController.h; sourceTree = "<group>"; };
+		18B7333216B83EEA00B25691 /* LargeDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeDataController.m; sourceTree = "<group>"; };
+		18B7333316B83EEA00B25691 /* LargeDataController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeDataController.xib; sourceTree = "<group>"; };
+		18B7333C16B840BE00B25691 /* BrowserUsageStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserUsageStats.h; sourceTree = "<group>"; };
+		18B7333D16B840BE00B25691 /* Datasource6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource6.h; sourceTree = "<group>"; };
+		18B7333E16B840BE00B25691 /* Datasource6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datasource6.m; sourceTree = "<group>"; };
+		18B7333F16B840BE00B25691 /* MobileBrowserUsageStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileBrowserUsageStats.h; sourceTree = "<group>"; };
+		18B7334016B840BE00B25691 /* MobileBrowserUsageStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileBrowserUsageStats.m; sourceTree = "<group>"; };
+		18B7334116B840BE00B25691 /* ShinobiChart+LineChart2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShinobiChart+LineChart2.h"; sourceTree = "<group>"; };
+		18B7334216B840BE00B25691 /* ShinobiChart+LineChart2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShinobiChart+LineChart2.m"; sourceTree = "<group>"; };
+		18B7334616B840D400B25691 /* LineChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartController.h; sourceTree = "<group>"; };
+		18B7334716B840D400B25691 /* LineChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartController.m; sourceTree = "<group>"; };
+		18B7334816B840D400B25691 /* LineChartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartController.xib; sourceTree = "<group>"; };
+		18B7335A16B846CD00B25691 /* ShinobiGrids.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiGrids.framework; sourceTree = "<group>"; };
+		18B7336216B84AEF00B25691 /* DataSource8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource8.h; sourceTree = "<group>"; };
+		18B7336316B84AEF00B25691 /* DataSource8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource8.m; sourceTree = "<group>"; };
+		18B7336416B84AEF00B25691 /* ios-linen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-linen.png"; sourceTree = "<group>"; };
+		18B7336516B84AEF00B25691 /* logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_black.png; sourceTree = "<group>"; };
+		18B7336916B84B0200B25691 /* LargeDataController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeDataController2.h; sourceTree = "<group>"; };
+		18B7336A16B84B0200B25691 /* LargeDataController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeDataController2.m; sourceTree = "<group>"; };
+		18B7336B16B84B0200B25691 /* LargeDataController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeDataController2.xib; sourceTree = "<group>"; };
+		18B7337616B84DFC00B25691 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		18B7337716B84DFC00B25691 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		18B7337816B84DFC00B25691 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		18B7337916B84DFC00B25691 /* icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_retina.png; sourceTree = "<group>"; };
+		18B7337A16B84DFC00B25691 /* icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_small.png; sourceTree = "<group>"; };
+		18B7337B16B84DFC00B25691 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		18B7337C16B84DFC00B25691 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		18B7337D16B84DFC00B25691 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		18B7337E16B84DFC00B25691 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
+		18B7338816B84E0D00B25691 /* SectionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsController.h; sourceTree = "<group>"; };
+		18B7338916B84E0D00B25691 /* SectionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsController.m; sourceTree = "<group>"; };
+		18B7338A16B84E0D00B25691 /* SectionsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionsController.xib; sourceTree = "<group>"; };
+		18B7338D16B8528100B25691 /* DataSource11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource11.h; sourceTree = "<group>"; };
+		18B7338E16B8528100B25691 /* DataSource11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource11.m; sourceTree = "<group>"; };
 		18CF404C16B1E1FF007923FE /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		18CF405716B1E567007923FE /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		18CF405816B1E568007923FE /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
@@ -108,17 +252,258 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B732AB16B82A3D00B25691 /* Security.framework in Frameworks */,
+				7C193C1416B12263002E2D44 /* CoreGraphics.framework in Frameworks */,
+				18B732A916B82A2C00B25691 /* OpenGLES.framework in Frameworks */,
 				7C3055EC16B6857500BFA132 /* QuartzCore.framework in Frameworks */,
 				7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */,
 				7C193C1216B12263002E2D44 /* Foundation.framework in Frameworks */,
-				7C193C1416B12263002E2D44 /* CoreGraphics.framework in Frameworks */,
 				7C193C1616B12263002E2D44 /* CoreData.framework in Frameworks */,
+				18B732A716B82A1200B25691 /* ShinobiCharts.framework in Frameworks */,
+				18B7335B16B846CD00B25691 /* ShinobiGrids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18B732A416B829CB00B25691 /* ShinobiCharts */ = {
+			isa = PBXGroup;
+			children = (
+				18B7335A16B846CD00B25691 /* ShinobiGrids.framework */,
+				18B732A616B82A1200B25691 /* ShinobiCharts.framework */,
+			);
+			path = ShinobiCharts;
+			sourceTree = "<group>";
+		};
+		18B732B016B82C3D00B25691 /* ShinobiChartsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B7333A16B8409C00B25691 /* ShinobyLineChart */,
+				18B7332116B83E2500B25691 /* ShinobyLargeDataSet */,
+				18B7330616B837AE00B25691 /* ShinobyFinancialChart */,
+				18B732F516B834D700B25691 /* ShinobyColumnChart */,
+				18B732E016B8319F00B25691 /* ShinobyBarChartController */,
+				18B732BE16B82DF600B25691 /* ShinobyAreaController */,
+			);
+			path = ShinobiChartsControllers;
+			sourceTree = "<group>";
+		};
+		18B732BE16B82DF600B25691 /* ShinobyAreaController */ = {
+			isa = PBXGroup;
+			children = (
+				18B732BF16B82DF600B25691 /* Area */,
+				18B732CD16B82E3B00B25691 /* ShinobyAreaController.h */,
+				18B732CE16B82E3B00B25691 /* ShinobyAreaController.m */,
+				18B732CF16B82E3B00B25691 /* ShinobyAreaController.xib */,
+			);
+			path = ShinobyAreaController;
+			sourceTree = "<group>";
+		};
+		18B732BF16B82DF600B25691 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				18B732C016B82E1F00B25691 /* Datasource.h */,
+				18B732C116B82E1F00B25691 /* Datasource.m */,
+				18B732C216B82E1F00B25691 /* London2012MedalData.h */,
+				18B732C316B82E1F00B25691 /* London2012MedalData.m */,
+				18B732C416B82E1F00B25691 /* MedalData.h */,
+				18B732C516B82E1F00B25691 /* ShinobiChart+AreaChart.h */,
+				18B732C616B82E1F00B25691 /* ShinobiChart+AreaChart.m */,
+				18B732C716B82E1F00B25691 /* UIColor+AreaChart.h */,
+				18B732C816B82E1F00B25691 /* UIColor+AreaChart.m */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		18B732E016B8319F00B25691 /* ShinobyBarChartController */ = {
+			isa = PBXGroup;
+			children = (
+				18B732E116B8319F00B25691 /* BarChart */,
+				18B732EC16B831E600B25691 /* ShinobyBarChartController.h */,
+				18B732ED16B831E600B25691 /* ShinobyBarChartController.m */,
+				18B732EE16B831E600B25691 /* ShinobyBarChartController.xib */,
+			);
+			path = ShinobyBarChartController;
+			sourceTree = "<group>";
+		};
+		18B732E116B8319F00B25691 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B732E216B831C700B25691 /* CountriesAreaData.h */,
+				18B732E316B831C700B25691 /* Datasource2.h */,
+				18B732E416B831C700B25691 /* Datasource2.m */,
+				18B732E516B831C700B25691 /* ShinobiChart+BarChart.h */,
+				18B732E616B831C700B25691 /* ShinobiChart+BarChart.m */,
+				18B732E716B831C700B25691 /* TopTenCountriesAreaData.h */,
+				18B732E816B831C700B25691 /* TopTenCountriesAreaData.m */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		18B732F516B834D700B25691 /* ShinobyColumnChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B732F616B834D700B25691 /* ColumnChart */,
+				18B7330116B8354300B25691 /* ShinobyColumnChartController.h */,
+				18B7330216B8354400B25691 /* ShinobyColumnChartController.m */,
+				18B7330316B8354400B25691 /* ShinobyColumnChartController.xib */,
+			);
+			path = ShinobyColumnChart;
+			sourceTree = "<group>";
+		};
+		18B732F616B834D700B25691 /* ColumnChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B732F716B834FD00B25691 /* Datasource3.h */,
+				18B732F816B834FD00B25691 /* Datasource3.m */,
+				18B732F916B834FD00B25691 /* ShinobiChart+columnChart.h */,
+				18B732FA16B834FD00B25691 /* ShinobiChart+columnChart.m */,
+				18B732FB16B834FD00B25691 /* UKWeatherData.h */,
+				18B732FC16B834FD00B25691 /* UKWeatherData.m */,
+				18B732FD16B834FD00B25691 /* WeatherData.h */,
+			);
+			path = ColumnChart;
+			sourceTree = "<group>";
+		};
+		18B7330616B837AE00B25691 /* ShinobyFinancialChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B7330716B837AF00B25691 /* FinancialChart */,
+				18B7331416B8380100B25691 /* FinancialChartController.h */,
+				18B7331516B8380100B25691 /* FinancialChartController.m */,
+				18B7331616B8380100B25691 /* FinancialChartController.xib */,
+			);
+			path = ShinobyFinancialChart;
+			sourceTree = "<group>";
+		};
+		18B7330716B837AF00B25691 /* FinancialChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B7330816B837DD00B25691 /* appleData.csv */,
+				18B7330916B837DD00B25691 /* AppleStockData.h */,
+				18B7330A16B837DD00B25691 /* AppleStockData.m */,
+				18B7330B16B837DD00B25691 /* Datasource4.h */,
+				18B7330C16B837DD00B25691 /* Datasource4.m */,
+				18B7330D16B837DD00B25691 /* ShinobiChart+CandlestickChart.h */,
+				18B7330E16B837DD00B25691 /* ShinobiChart+CandlestickChart.m */,
+				18B7330F16B837DD00B25691 /* StockData.h */,
+			);
+			path = FinancialChart;
+			sourceTree = "<group>";
+		};
+		18B7332116B83E2500B25691 /* ShinobyLargeDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				18B7332216B83E2700B25691 /* LargeDataSet */,
+				18B7333116B83EEA00B25691 /* LargeDataController.h */,
+				18B7333216B83EEA00B25691 /* LargeDataController.m */,
+				18B7333316B83EEA00B25691 /* LargeDataController.xib */,
+			);
+			path = ShinobyLargeDataSet;
+			sourceTree = "<group>";
+		};
+		18B7332216B83E2700B25691 /* LargeDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				18B7332F16B83EB100B25691 /* pi.png */,
+				18B7332316B83E9B00B25691 /* Datasource5.h */,
+				18B7332416B83E9B00B25691 /* Datasource5.m */,
+				18B7332516B83E9B00B25691 /* NumberData.h */,
+				18B7332616B83E9B00B25691 /* PI50K_DP.TXT */,
+				18B7332716B83E9B00B25691 /* PiNumberData.h */,
+				18B7332816B83E9B00B25691 /* PiNumberData.m */,
+				18B7332916B83E9B00B25691 /* ShinobiChart+LineChart.h */,
+				18B7332A16B83E9B00B25691 /* ShinobiChart+LineChart.m */,
+			);
+			path = LargeDataSet;
+			sourceTree = "<group>";
+		};
+		18B7333A16B8409C00B25691 /* ShinobyLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B7333B16B840A000B25691 /* LineChart */,
+				18B7334616B840D400B25691 /* LineChartController.h */,
+				18B7334716B840D400B25691 /* LineChartController.m */,
+				18B7334816B840D400B25691 /* LineChartController.xib */,
+			);
+			path = ShinobyLineChart;
+			sourceTree = "<group>";
+		};
+		18B7333B16B840A000B25691 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				18B7333C16B840BE00B25691 /* BrowserUsageStats.h */,
+				18B7333D16B840BE00B25691 /* Datasource6.h */,
+				18B7333E16B840BE00B25691 /* Datasource6.m */,
+				18B7333F16B840BE00B25691 /* MobileBrowserUsageStats.h */,
+				18B7334016B840BE00B25691 /* MobileBrowserUsageStats.m */,
+				18B7334116B840BE00B25691 /* ShinobiChart+LineChart2.h */,
+				18B7334216B840BE00B25691 /* ShinobiChart+LineChart2.m */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		18B7334F16B8441A00B25691 /* ShinobiGridsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B7337216B84D9000B25691 /* ShinobiSections */,
+				18B7336016B84AC600B25691 /* ShinobiLargeDataSet */,
+			);
+			path = ShinobiGridsControllers;
+			sourceTree = "<group>";
+		};
+		18B7336016B84AC600B25691 /* ShinobiLargeDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				18B7336116B84AC600B25691 /* LargeDataSet */,
+				18B7336916B84B0200B25691 /* LargeDataController2.h */,
+				18B7336A16B84B0200B25691 /* LargeDataController2.m */,
+				18B7336B16B84B0200B25691 /* LargeDataController2.xib */,
+			);
+			path = ShinobiLargeDataSet;
+			sourceTree = "<group>";
+		};
+		18B7336116B84AC600B25691 /* LargeDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				18B7336216B84AEF00B25691 /* DataSource8.h */,
+				18B7336316B84AEF00B25691 /* DataSource8.m */,
+				18B7336416B84AEF00B25691 /* ios-linen.png */,
+				18B7336516B84AEF00B25691 /* logo_black.png */,
+			);
+			path = LargeDataSet;
+			sourceTree = "<group>";
+		};
+		18B7337216B84D9000B25691 /* ShinobiSections */ = {
+			isa = PBXGroup;
+			children = (
+				18B7337316B84D9200B25691 /* Sections */,
+				18B7338816B84E0D00B25691 /* SectionsController.h */,
+				18B7338916B84E0D00B25691 /* SectionsController.m */,
+				18B7338A16B84E0D00B25691 /* SectionsController.xib */,
+			);
+			path = ShinobiSections;
+			sourceTree = "<group>";
+		};
+		18B7337316B84D9200B25691 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				18B7338D16B8528100B25691 /* DataSource11.h */,
+				18B7338E16B8528100B25691 /* DataSource11.m */,
+				18B7337616B84DFC00B25691 /* Default-Landscape~ipad.png */,
+				18B7337716B84DFC00B25691 /* Default-Portrait~ipad.png */,
+				18B7337816B84DFC00B25691 /* Default.png */,
+				18B7337916B84DFC00B25691 /* icon_retina.png */,
+				18B7337A16B84DFC00B25691 /* icon_small.png */,
+				18B7337B16B84DFC00B25691 /* icon.png */,
+				18B7337C16B84DFC00B25691 /* logo.png */,
+				18B7337D16B84DFC00B25691 /* Stock.h */,
+				18B7337E16B84DFC00B25691 /* Stock.m */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
 		18CF404B16B1E1DF007923FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +515,8 @@
 		7C193C0016B12263002E2D44 = {
 			isa = PBXGroup;
 			children = (
+				18B732AA16B82A3D00B25691 /* Security.framework */,
+				18B732A816B82A2C00B25691 /* OpenGLES.framework */,
 				7C3055EB16B6857500BFA132 /* QuartzCore.framework */,
 				7C193C1716B12263002E2D44 /* BrandymintChart */,
 				7C193C0E16B12263002E2D44 /* Frameworks */,
@@ -233,6 +620,8 @@
 		7C3055D916B67C9400BFA132 /* NativeControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18B7334F16B8441A00B25691 /* ShinobiGridsControllers */,
+				18B732B016B82C3D00B25691 /* ShinobiChartsControllers */,
 				7C3055E116B67E3000BFA132 /* PieChartController.h */,
 				7C3055E216B67E3000BFA132 /* PieChartController.m */,
 				7C3055E316B67E3000BFA132 /* PieChartController.xib */,
@@ -246,6 +635,7 @@
 		7C3055E616B67ED200BFA132 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				18B732A416B829CB00B25691 /* ShinobiCharts */,
 				7CC8BD5316B799DE0019C59F /* iOSPlot */,
 				7C3055E716B67EF500BFA132 /* XYPieChart */,
 			);
@@ -351,6 +741,26 @@
 				7CC8BE2816B7F8510019C59F /* Icon-Small-50@2x.png in Resources */,
 				7CC8BE4A16B80EF70019C59F /* Icon.png in Resources */,
 				7CC8BE4B16B80EF70019C59F /* Icon@2x.png in Resources */,
+				18B732D116B82E3B00B25691 /* ShinobyAreaController.xib in Resources */,
+				18B732F016B831E600B25691 /* ShinobyBarChartController.xib in Resources */,
+				18B7330516B8354500B25691 /* ShinobyColumnChartController.xib in Resources */,
+				18B7331016B837DD00B25691 /* appleData.csv in Resources */,
+				18B7331816B8380100B25691 /* FinancialChartController.xib in Resources */,
+				18B7332C16B83E9B00B25691 /* PI50K_DP.TXT in Resources */,
+				18B7333016B83EB100B25691 /* pi.png in Resources */,
+				18B7333516B83EEA00B25691 /* LargeDataController.xib in Resources */,
+				18B7334A16B840D400B25691 /* LineChartController.xib in Resources */,
+				18B7336716B84AEF00B25691 /* ios-linen.png in Resources */,
+				18B7336816B84AEF00B25691 /* logo_black.png in Resources */,
+				18B7336D16B84B0200B25691 /* LargeDataController2.xib in Resources */,
+				18B7338016B84DFC00B25691 /* Default-Landscape~ipad.png in Resources */,
+				18B7338116B84DFC00B25691 /* Default-Portrait~ipad.png in Resources */,
+				18B7338216B84DFC00B25691 /* Default.png in Resources */,
+				18B7338316B84DFC00B25691 /* icon_retina.png in Resources */,
+				18B7338416B84DFC00B25691 /* icon_small.png in Resources */,
+				18B7338516B84DFC00B25691 /* icon.png in Resources */,
+				18B7338616B84DFC00B25691 /* logo.png in Resources */,
+				18B7338C16B84E0D00B25691 /* SectionsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +786,36 @@
 				7CC8BD5A16B79A960019C59F /* PCPieChart.m in Sources */,
 				7CC8BD5D16B79AB50019C59F /* PCHalfPieChart.m in Sources */,
 				7CC8BD6116B79AFF0019C59F /* PlotWithLineController.m in Sources */,
+				18B732C916B82E1F00B25691 /* Datasource.m in Sources */,
+				18B732CA16B82E1F00B25691 /* London2012MedalData.m in Sources */,
+				18B732CB16B82E1F00B25691 /* ShinobiChart+AreaChart.m in Sources */,
+				18B732CC16B82E1F00B25691 /* UIColor+AreaChart.m in Sources */,
+				18B732D016B82E3B00B25691 /* ShinobyAreaController.m in Sources */,
+				18B732E916B831C700B25691 /* Datasource2.m in Sources */,
+				18B732EA16B831C700B25691 /* ShinobiChart+BarChart.m in Sources */,
+				18B732EB16B831C700B25691 /* TopTenCountriesAreaData.m in Sources */,
+				18B732EF16B831E600B25691 /* ShinobyBarChartController.m in Sources */,
+				18B732FE16B834FD00B25691 /* Datasource3.m in Sources */,
+				18B732FF16B834FD00B25691 /* ShinobiChart+columnChart.m in Sources */,
+				18B7330016B834FD00B25691 /* UKWeatherData.m in Sources */,
+				18B7330416B8354500B25691 /* ShinobyColumnChartController.m in Sources */,
+				18B7331116B837DD00B25691 /* AppleStockData.m in Sources */,
+				18B7331216B837DD00B25691 /* Datasource4.m in Sources */,
+				18B7331316B837DD00B25691 /* ShinobiChart+CandlestickChart.m in Sources */,
+				18B7331716B8380100B25691 /* FinancialChartController.m in Sources */,
+				18B7332B16B83E9B00B25691 /* Datasource5.m in Sources */,
+				18B7332D16B83E9B00B25691 /* PiNumberData.m in Sources */,
+				18B7332E16B83E9B00B25691 /* ShinobiChart+LineChart.m in Sources */,
+				18B7333416B83EEA00B25691 /* LargeDataController.m in Sources */,
+				18B7334316B840BE00B25691 /* Datasource6.m in Sources */,
+				18B7334416B840BE00B25691 /* MobileBrowserUsageStats.m in Sources */,
+				18B7334516B840BE00B25691 /* ShinobiChart+LineChart2.m in Sources */,
+				18B7334916B840D400B25691 /* LineChartController.m in Sources */,
+				18B7336616B84AEF00B25691 /* DataSource8.m in Sources */,
+				18B7336C16B84B0200B25691 /* LargeDataController2.m in Sources */,
+				18B7338716B84DFC00B25691 /* Stock.m in Sources */,
+				18B7338B16B84E0D00B25691 /* SectionsController.m in Sources */,
+				18B7338F16B8528200B25691 /* DataSource11.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +889,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Denis Dubov (DVLA4WK9D2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BrandymintChart/Submodules/ShinobiCharts\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";
@@ -464,6 +908,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Denis Dubov (DVLA4WK9D2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BrandymintChart/Submodules/ShinobiCharts\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";

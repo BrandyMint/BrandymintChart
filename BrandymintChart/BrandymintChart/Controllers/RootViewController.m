@@ -21,8 +21,8 @@
 {
     [super viewDidLoad];
     
-    arrayTitle = [[NSArray alloc] initWithObjects:@"iOS Plot", nil];
-    arrayDescription = [[NSArray alloc] initWithObjects:@"native library", nil];
+    arrayTitle = [[NSArray alloc] initWithObjects:@"iOS Plot", @"Shinoby Charts", @"Shinoby Grids", nil];
+    arrayDescription = [[NSArray alloc] initWithObjects:@"native library", @"native library", @"native library", nil];
 }
 
 -(void) viewWillAppear:(BOOL)animated

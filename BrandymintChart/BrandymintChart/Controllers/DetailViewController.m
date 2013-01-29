@@ -12,6 +12,16 @@
 #import "PieChartController.h"
 #import "PlotWithLineController.h"
 
+#import "ShinobyAreaController.h"
+#import "ShinobyBarChartController.h"
+#import "ShinobyColumnChartController.h"
+#import "FinancialChartController.h"
+#import "LargeDataController.h"
+#import "LineChartController.h"
+
+#import "LargeDataController2.h"
+#import "SectionsController.h"
+
 @interface DetailViewController ()
 @property (nonatomic, strong) NSMutableArray *pageViews;
 @end
@@ -277,6 +287,35 @@
                                                       initWithNibName:@"PlotWithLineController" bundle:[NSBundle mainBundle]];
             
             controllers = [[NSMutableArray alloc] initWithObjects:myPieController, myPlotWithLine, nil];
+        }
+        break;
+            
+        case 1:
+        {
+            ShinobyAreaController *myPieController = [[ShinobyAreaController alloc]
+                                                   initWithNibName:@"ShinobyAreaController" bundle:[NSBundle mainBundle]];
+            ShinobyBarChartController *myPieController2 = [[ShinobyBarChartController alloc]
+                                                      initWithNibName:@"ShinobyBarChartController" bundle:[NSBundle mainBundle]];
+            ShinobyColumnChartController *myPieController3 = [[ShinobyColumnChartController alloc]
+                                                           initWithNibName:@"ShinobyColumnChartController" bundle:[NSBundle mainBundle]];
+            FinancialChartController *myPieController4 = [[FinancialChartController alloc]
+                                                          initWithNibName:@"FinancialChartController" bundle:[NSBundle mainBundle]];
+            LargeDataController *myPieController5 = [[LargeDataController alloc]
+                                                          initWithNibName:@"LargeDataController" bundle:[NSBundle mainBundle]];
+            LineChartController *myPieController6 = [[LineChartController alloc]
+                                                     initWithNibName:@"LineChartController" bundle:[NSBundle mainBundle]];
+            
+            controllers = [[NSMutableArray alloc] initWithObjects:myPieController, myPieController2, myPieController3, myPieController4, myPieController5, myPieController6, nil];
+        }
+        break;
+            
+        case 2:
+        {
+            LargeDataController2 *myPieController = [[LargeDataController2 alloc]
+                                                     initWithNibName:@"LargeDataController2" bundle:[NSBundle mainBundle]];
+            SectionsController *myPieController2 = [[SectionsController alloc]
+                                                     initWithNibName:@"SectionsController" bundle:[NSBundle mainBundle]];
+            controllers = [[NSMutableArray alloc] initWithObjects:myPieController, myPieController2, nil];
         }
         break;
             
