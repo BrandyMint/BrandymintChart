@@ -61,6 +61,28 @@
 		18B7338B16B84E0D00B25691 /* SectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7338916B84E0D00B25691 /* SectionsController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		18B7338C16B84E0D00B25691 /* SectionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B7338A16B84E0D00B25691 /* SectionsController.xib */; };
 		18B7338F16B8528200B25691 /* DataSource11.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7338E16B8528100B25691 /* DataSource11.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B5D16B8628C00C60EC9 /* KeepEdgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B5B16B8628C00C60EC9 /* KeepEdgeController.m */; };
+		18CE2B5E16B8628C00C60EC9 /* KeepEdgeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CE2B5C16B8628C00C60EC9 /* KeepEdgeController.xib */; };
+		18CE2B6116B862FF00C60EC9 /* KeepEdgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6016B862FF00C60EC9 /* KeepEdgeView.m */; };
+		18CE2B8716B8635000C60EC9 /* DemoAreaChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6416B8635000C60EC9 /* DemoAreaChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8816B8635000C60EC9 /* DemoAreaStackedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6616B8635000C60EC9 /* DemoAreaStackedChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8916B8635000C60EC9 /* DemoAreaXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6816B8635000C60EC9 /* DemoAreaXYChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8A16B8635000C60EC9 /* DemoAreaXYStackedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6A16B8635000C60EC9 /* DemoAreaXYStackedChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8B16B8635000C60EC9 /* DemoBar3DChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6C16B8635000C60EC9 /* DemoBar3DChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8C16B8635000C60EC9 /* DemoBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B6E16B8635000C60EC9 /* DemoBarChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8D16B8635000C60EC9 /* DemoBarStacked3DChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7016B8635000C60EC9 /* DemoBarStacked3DChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8E16B8635000C60EC9 /* DemoBarStackedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7216B8635000C60EC9 /* DemoBarStackedChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B8F16B8635000C60EC9 /* DemoBarStackedPercentage3DChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7416B8635000C60EC9 /* DemoBarStackedPercentage3DChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9016B8635000C60EC9 /* DemoBarStackedPercentageChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7616B8635000C60EC9 /* DemoBarStackedPercentageChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9116B8635000C60EC9 /* DemoHighLowChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7816B8635000C60EC9 /* DemoHighLowChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9216B8635000C60EC9 /* DemoHistogramChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7A16B8635000C60EC9 /* DemoHistogramChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9316B8635000C60EC9 /* DemoLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7C16B8635000C60EC9 /* DemoLineChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9416B8635000C60EC9 /* DemoLineXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B7E16B8635000C60EC9 /* DemoLineXYChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9516B8635000C60EC9 /* DemoMultiAxesChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8016B8635000C60EC9 /* DemoMultiAxesChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9616B8635000C60EC9 /* DemoPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8216B8635000C60EC9 /* DemoPieChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9716B8635000C60EC9 /* DemoScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8416B8635000C60EC9 /* DemoScatterChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2B9816B8635000C60EC9 /* DemoTimeSeriesChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE2B8616B8635000C60EC9 /* DemoTimeSeriesChart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CE2C1D16B8648C00C60EC9 /* libIPhoneCharting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE2B9916B8648C00C60EC9 /* libIPhoneCharting.a */; };
 		18CF405A16B1E568007923FE /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF405816B1E568007923FE /* CardViewController.m */; };
 		18CF405B16B1E568007923FE /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF405916B1E568007923FE /* CardViewController.xib */; };
 		7C193C1016B12263002E2D44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C193C0F16B12263002E2D44 /* UIKit.framework */; };
@@ -191,6 +213,176 @@
 		18B7338A16B84E0D00B25691 /* SectionsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionsController.xib; sourceTree = "<group>"; };
 		18B7338D16B8528100B25691 /* DataSource11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource11.h; sourceTree = "<group>"; };
 		18B7338E16B8528100B25691 /* DataSource11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource11.m; sourceTree = "<group>"; };
+		18CE2B5A16B8628C00C60EC9 /* KeepEdgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepEdgeController.h; sourceTree = "<group>"; };
+		18CE2B5B16B8628C00C60EC9 /* KeepEdgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepEdgeController.m; sourceTree = "<group>"; };
+		18CE2B5C16B8628C00C60EC9 /* KeepEdgeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeepEdgeController.xib; sourceTree = "<group>"; };
+		18CE2B5F16B862FF00C60EC9 /* KeepEdgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeepEdgeView.h; sourceTree = "<group>"; };
+		18CE2B6016B862FF00C60EC9 /* KeepEdgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeepEdgeView.m; sourceTree = "<group>"; };
+		18CE2B6316B8635000C60EC9 /* DemoAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAreaChart.h; sourceTree = "<group>"; };
+		18CE2B6416B8635000C60EC9 /* DemoAreaChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAreaChart.m; sourceTree = "<group>"; };
+		18CE2B6516B8635000C60EC9 /* DemoAreaStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAreaStackedChart.h; sourceTree = "<group>"; };
+		18CE2B6616B8635000C60EC9 /* DemoAreaStackedChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAreaStackedChart.m; sourceTree = "<group>"; };
+		18CE2B6716B8635000C60EC9 /* DemoAreaXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAreaXYChart.h; sourceTree = "<group>"; };
+		18CE2B6816B8635000C60EC9 /* DemoAreaXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAreaXYChart.m; sourceTree = "<group>"; };
+		18CE2B6916B8635000C60EC9 /* DemoAreaXYStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAreaXYStackedChart.h; sourceTree = "<group>"; };
+		18CE2B6A16B8635000C60EC9 /* DemoAreaXYStackedChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAreaXYStackedChart.m; sourceTree = "<group>"; };
+		18CE2B6B16B8635000C60EC9 /* DemoBar3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBar3DChart.h; sourceTree = "<group>"; };
+		18CE2B6C16B8635000C60EC9 /* DemoBar3DChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBar3DChart.m; sourceTree = "<group>"; };
+		18CE2B6D16B8635000C60EC9 /* DemoBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarChart.h; sourceTree = "<group>"; };
+		18CE2B6E16B8635000C60EC9 /* DemoBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarChart.m; sourceTree = "<group>"; };
+		18CE2B6F16B8635000C60EC9 /* DemoBarStacked3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarStacked3DChart.h; sourceTree = "<group>"; };
+		18CE2B7016B8635000C60EC9 /* DemoBarStacked3DChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarStacked3DChart.m; sourceTree = "<group>"; };
+		18CE2B7116B8635000C60EC9 /* DemoBarStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarStackedChart.h; sourceTree = "<group>"; };
+		18CE2B7216B8635000C60EC9 /* DemoBarStackedChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarStackedChart.m; sourceTree = "<group>"; };
+		18CE2B7316B8635000C60EC9 /* DemoBarStackedPercentage3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarStackedPercentage3DChart.h; sourceTree = "<group>"; };
+		18CE2B7416B8635000C60EC9 /* DemoBarStackedPercentage3DChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarStackedPercentage3DChart.m; sourceTree = "<group>"; };
+		18CE2B7516B8635000C60EC9 /* DemoBarStackedPercentageChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBarStackedPercentageChart.h; sourceTree = "<group>"; };
+		18CE2B7616B8635000C60EC9 /* DemoBarStackedPercentageChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBarStackedPercentageChart.m; sourceTree = "<group>"; };
+		18CE2B7716B8635000C60EC9 /* DemoHighLowChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHighLowChart.h; sourceTree = "<group>"; };
+		18CE2B7816B8635000C60EC9 /* DemoHighLowChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHighLowChart.m; sourceTree = "<group>"; };
+		18CE2B7916B8635000C60EC9 /* DemoHistogramChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHistogramChart.h; sourceTree = "<group>"; };
+		18CE2B7A16B8635000C60EC9 /* DemoHistogramChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHistogramChart.m; sourceTree = "<group>"; };
+		18CE2B7B16B8635000C60EC9 /* DemoLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLineChart.h; sourceTree = "<group>"; };
+		18CE2B7C16B8635000C60EC9 /* DemoLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLineChart.m; sourceTree = "<group>"; };
+		18CE2B7D16B8635000C60EC9 /* DemoLineXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLineXYChart.h; sourceTree = "<group>"; };
+		18CE2B7E16B8635000C60EC9 /* DemoLineXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLineXYChart.m; sourceTree = "<group>"; };
+		18CE2B7F16B8635000C60EC9 /* DemoMultiAxesChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMultiAxesChart.h; sourceTree = "<group>"; };
+		18CE2B8016B8635000C60EC9 /* DemoMultiAxesChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMultiAxesChart.m; sourceTree = "<group>"; };
+		18CE2B8116B8635000C60EC9 /* DemoPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPieChart.h; sourceTree = "<group>"; };
+		18CE2B8216B8635000C60EC9 /* DemoPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoPieChart.m; sourceTree = "<group>"; };
+		18CE2B8316B8635000C60EC9 /* DemoScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoScatterChart.h; sourceTree = "<group>"; };
+		18CE2B8416B8635000C60EC9 /* DemoScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoScatterChart.m; sourceTree = "<group>"; };
+		18CE2B8516B8635000C60EC9 /* DemoTimeSeriesChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTimeSeriesChart.h; sourceTree = "<group>"; };
+		18CE2B8616B8635000C60EC9 /* DemoTimeSeriesChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTimeSeriesChart.m; sourceTree = "<group>"; };
+		18CE2B9916B8648C00C60EC9 /* libIPhoneCharting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIPhoneCharting.a; sourceTree = "<group>"; };
+		18CE2B9D16B8648C00C60EC9 /* DTCAbstractDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAbstractDataset.h; sourceTree = "<group>"; };
+		18CE2B9E16B8648C00C60EC9 /* DTCAbstractIntervalXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAbstractIntervalXYDataset.h; sourceTree = "<group>"; };
+		18CE2B9F16B8648C00C60EC9 /* DTCAbstractSeriesDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAbstractSeriesDataset.h; sourceTree = "<group>"; };
+		18CE2BA016B8648C00C60EC9 /* DTCAbstractXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAbstractXYDataset.h; sourceTree = "<group>"; };
+		18CE2BA116B8648C00C60EC9 /* DTCAbstractXYZDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAbstractXYZDataset.h; sourceTree = "<group>"; };
+		18CE2BA216B8648C00C60EC9 /* DTCComparableObjectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCComparableObjectItem.h; sourceTree = "<group>"; };
+		18CE2BA316B8648C00C60EC9 /* DTCComparableObjectSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCComparableObjectSeries.h; sourceTree = "<group>"; };
+		18CE2BA416B8648C00C60EC9 /* DTCDatasetGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDatasetGroup.h; sourceTree = "<group>"; };
+		18CE2BA516B8648C00C60EC9 /* DTCDatasetUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDatasetUtilities.h; sourceTree = "<group>"; };
+		18CE2BA616B8648C00C60EC9 /* DTCDataUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDataUtilities.h; sourceTree = "<group>"; };
+		18CE2BA716B8648C00C60EC9 /* DTCDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDateRange.h; sourceTree = "<group>"; };
+		18CE2BA816B8648C00C60EC9 /* DTCDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDay.h; sourceTree = "<group>"; };
+		18CE2BA916B8648C00C60EC9 /* DTCDefaultCategoryDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultCategoryDataset.h; sourceTree = "<group>"; };
+		18CE2BAA16B8648C00C60EC9 /* DTCDefaultKeyedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultKeyedValue.h; sourceTree = "<group>"; };
+		18CE2BAB16B8648C00C60EC9 /* DTCDefaultKeyedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultKeyedValues.h; sourceTree = "<group>"; };
+		18CE2BAC16B8648C00C60EC9 /* DTCDefaultKeyedValues2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultKeyedValues2D.h; sourceTree = "<group>"; };
+		18CE2BAD16B8648C00C60EC9 /* DTCDefaultOHLCDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultOHLCDataset.h; sourceTree = "<group>"; };
+		18CE2BAE16B8648C00C60EC9 /* DTCDefaultPieDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultPieDataset.h; sourceTree = "<group>"; };
+		18CE2BAF16B8648C00C60EC9 /* DTCDefaultTableXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultTableXYDataset.h; sourceTree = "<group>"; };
+		18CE2BB016B8648C00C60EC9 /* DTCDefaultXYZDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDefaultXYZDataset.h; sourceTree = "<group>"; };
+		18CE2BB116B8648C00C60EC9 /* DTCDomainOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCDomainOrder.h; sourceTree = "<group>"; };
+		18CE2BB216B8648C00C60EC9 /* DTCFixedMillisecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCFixedMillisecond.h; sourceTree = "<group>"; };
+		18CE2BB316B8648C00C60EC9 /* DTCHistogramBin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHistogramBin.h; sourceTree = "<group>"; };
+		18CE2BB416B8648C00C60EC9 /* DTCHistogramDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHistogramDataset.h; sourceTree = "<group>"; };
+		18CE2BB516B8648C00C60EC9 /* DTCHistogramType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHistogramType.h; sourceTree = "<group>"; };
+		18CE2BB616B8648C00C60EC9 /* DTCHour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHour.h; sourceTree = "<group>"; };
+		18CE2BB716B8648C00C60EC9 /* DTCICategoryDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCICategoryDataset.h; sourceTree = "<group>"; };
+		18CE2BB816B8648C00C60EC9 /* DTCIComparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIComparable.h; sourceTree = "<group>"; };
+		18CE2BB916B8648C00C60EC9 /* DTCIDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIDataset.h; sourceTree = "<group>"; };
+		18CE2BBA16B8648C00C60EC9 /* DTCIDomainInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIDomainInfo.h; sourceTree = "<group>"; };
+		18CE2BBB16B8648C00C60EC9 /* DTCIGanttCategoryDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIGanttCategoryDataset.h; sourceTree = "<group>"; };
+		18CE2BBC16B8648C00C60EC9 /* DTCIIntervalCategoryDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIIntervalCategoryDataset.h; sourceTree = "<group>"; };
+		18CE2BBD16B8648C00C60EC9 /* DTCIIntervalXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIIntervalXYDataset.h; sourceTree = "<group>"; };
+		18CE2BBE16B8648C00C60EC9 /* DTCIKeyedValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIKeyedValue.h; sourceTree = "<group>"; };
+		18CE2BBF16B8648C00C60EC9 /* DTCIKeyedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIKeyedValues.h; sourceTree = "<group>"; };
+		18CE2BC016B8648C00C60EC9 /* DTCIKeyedValues2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIKeyedValues2D.h; sourceTree = "<group>"; };
+		18CE2BC116B8648C00C60EC9 /* DTCIMonthConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIMonthConstants.h; sourceTree = "<group>"; };
+		18CE2BC216B8648C00C60EC9 /* DTCIntervalXYDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIntervalXYDelegate.h; sourceTree = "<group>"; };
+		18CE2BC316B8648C00C60EC9 /* DTCIOHLCDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIOHLCDataset.h; sourceTree = "<group>"; };
+		18CE2BC416B8648C00C60EC9 /* DTCIPieDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIPieDataset.h; sourceTree = "<group>"; };
+		18CE2BC516B8648C00C60EC9 /* DTCIRangeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIRangeInfo.h; sourceTree = "<group>"; };
+		18CE2BC616B8648C00C60EC9 /* DTCISeriesDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCISeriesDataset.h; sourceTree = "<group>"; };
+		18CE2BC716B8648C00C60EC9 /* DTCITableXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCITableXYDataset.h; sourceTree = "<group>"; };
+		18CE2BC816B8648C00C60EC9 /* DTCITimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCITimeline.h; sourceTree = "<group>"; };
+		18CE2BC916B8648C00C60EC9 /* DTCITimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCITimePeriod.h; sourceTree = "<group>"; };
+		18CE2BCA16B8648C00C60EC9 /* DTCIValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIValue.h; sourceTree = "<group>"; };
+		18CE2BCB16B8648C00C60EC9 /* DTCIValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIValues.h; sourceTree = "<group>"; };
+		18CE2BCC16B8648C00C60EC9 /* DTCIValues2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIValues2D.h; sourceTree = "<group>"; };
+		18CE2BCD16B8648C00C60EC9 /* DTCIXYDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIXYDataset.h; sourceTree = "<group>"; };
+		18CE2BCE16B8648C00C60EC9 /* DTCIXYZDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCIXYZDataset.h; sourceTree = "<group>"; };
+		18CE2BCF16B8648C00C60EC9 /* DTCMillisecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCMillisecond.h; sourceTree = "<group>"; };
+		18CE2BD016B8648C00C60EC9 /* DTCMinute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCMinute.h; sourceTree = "<group>"; };
+		18CE2BD116B8648C00C60EC9 /* DTCMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCMonth.h; sourceTree = "<group>"; };
+		18CE2BD216B8648C00C60EC9 /* DTCOHLC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCOHLC.h; sourceTree = "<group>"; };
+		18CE2BD316B8648C00C60EC9 /* DTCOHLCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCOHLCItem.h; sourceTree = "<group>"; };
+		18CE2BD416B8648C00C60EC9 /* DTCOHLCSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCOHLCSeries.h; sourceTree = "<group>"; };
+		18CE2BD516B8648C00C60EC9 /* DTCOHLCSeriesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCOHLCSeriesCollection.h; sourceTree = "<group>"; };
+		18CE2BD616B8648C00C60EC9 /* DTCRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCRange.h; sourceTree = "<group>"; };
+		18CE2BD716B8648C00C60EC9 /* DTCRangeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCRangeType.h; sourceTree = "<group>"; };
+		18CE2BD816B8648C00C60EC9 /* DTCRegularTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCRegularTimePeriod.h; sourceTree = "<group>"; };
+		18CE2BD916B8648C00C60EC9 /* DTCSecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSecond.h; sourceTree = "<group>"; };
+		18CE2BDA16B8648C00C60EC9 /* DTCSegmentedTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSegmentedTimeline.h; sourceTree = "<group>"; };
+		18CE2BDB16B8648C00C60EC9 /* DTCSerialDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSerialDate.h; sourceTree = "<group>"; };
+		18CE2BDC16B8648C00C60EC9 /* DTCSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSeries.h; sourceTree = "<group>"; };
+		18CE2BDD16B8648C00C60EC9 /* DTCSimpleTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSimpleTimePeriod.h; sourceTree = "<group>"; };
+		18CE2BDE16B8648C00C60EC9 /* DTCSortOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSortOrder.h; sourceTree = "<group>"; };
+		18CE2BDF16B8648C00C60EC9 /* DTCSpreadsheetDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSpreadsheetDate.h; sourceTree = "<group>"; };
+		18CE2BE016B8648C00C60EC9 /* DTCStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCStroke.h; sourceTree = "<group>"; };
+		18CE2BE116B8648C00C60EC9 /* DTCTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTask.h; sourceTree = "<group>"; };
+		18CE2BE216B8648C00C60EC9 /* DTCTaskSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTaskSeries.h; sourceTree = "<group>"; };
+		18CE2BE316B8648C00C60EC9 /* DTCTaskSeriesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTaskSeriesCollection.h; sourceTree = "<group>"; };
+		18CE2BE416B8648C00C60EC9 /* DTCTimePeriodAnchor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTimePeriodAnchor.h; sourceTree = "<group>"; };
+		18CE2BE516B8648C00C60EC9 /* DTCTimeSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTimeSeries.h; sourceTree = "<group>"; };
+		18CE2BE616B8648C00C60EC9 /* DTCTimeSeriesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTimeSeriesCollection.h; sourceTree = "<group>"; };
+		18CE2BE716B8648C00C60EC9 /* DTCTimeSeriesDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTimeSeriesDataItem.h; sourceTree = "<group>"; };
+		18CE2BE816B8648C00C60EC9 /* DTCWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCWeek.h; sourceTree = "<group>"; };
+		18CE2BE916B8648C00C60EC9 /* DTCXYDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCXYDataItem.h; sourceTree = "<group>"; };
+		18CE2BEA16B8648C00C60EC9 /* DTCXYSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCXYSeries.h; sourceTree = "<group>"; };
+		18CE2BEB16B8648C00C60EC9 /* DTCXYSeriesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCXYSeriesCollection.h; sourceTree = "<group>"; };
+		18CE2BEC16B8648C00C60EC9 /* DTCYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCYear.h; sourceTree = "<group>"; };
+		18CE2BED16B8648C00C60EC9 /* IPCAbstractAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAbstractAxis.h; sourceTree = "<group>"; };
+		18CE2BEE16B8648C00C60EC9 /* IPCAbstractBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAbstractBarChart.h; sourceTree = "<group>"; };
+		18CE2BEF16B8648C00C60EC9 /* IPCAbstractCategoryChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAbstractCategoryChart.h; sourceTree = "<group>"; };
+		18CE2BF016B8648C00C60EC9 /* IPCAbstractChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAbstractChart.h; sourceTree = "<group>"; };
+		18CE2BF116B8648C00C60EC9 /* IPCAbstractXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAbstractXYChart.h; sourceTree = "<group>"; };
+		18CE2BF216B8648C00C60EC9 /* IPCAreaChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAreaChart.h; sourceTree = "<group>"; };
+		18CE2BF316B8648C00C60EC9 /* IPCAreaStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAreaStackedChart.h; sourceTree = "<group>"; };
+		18CE2BF416B8648C00C60EC9 /* IPCAreaXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAreaXYChart.h; sourceTree = "<group>"; };
+		18CE2BF516B8648C00C60EC9 /* IPCAreaXYStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCAreaXYStackedChart.h; sourceTree = "<group>"; };
+		18CE2BF616B8648C00C60EC9 /* IPCBar3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBar3DChart.h; sourceTree = "<group>"; };
+		18CE2BF716B8648C00C60EC9 /* IPCBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBarChart.h; sourceTree = "<group>"; };
+		18CE2BF816B8648C00C60EC9 /* IPCBarStacked3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBarStacked3DChart.h; sourceTree = "<group>"; };
+		18CE2BF916B8648C00C60EC9 /* IPCBarStackedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBarStackedChart.h; sourceTree = "<group>"; };
+		18CE2BFA16B8648C00C60EC9 /* IPCBarStackedPercentage3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBarStackedPercentage3DChart.h; sourceTree = "<group>"; };
+		18CE2BFB16B8648C00C60EC9 /* IPCBarStackedPercentageChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCBarStackedPercentageChart.h; sourceTree = "<group>"; };
+		18CE2BFC16B8648C00C60EC9 /* IPCCategoryAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCCategoryAxis.h; sourceTree = "<group>"; };
+		18CE2BFD16B8648C00C60EC9 /* IPCCategoryRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCCategoryRender.h; sourceTree = "<group>"; };
+		18CE2BFE16B8648C00C60EC9 /* IPCDefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCDefaultTheme.h; sourceTree = "<group>"; };
+		18CE2BFF16B8648C00C60EC9 /* IPCGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCGlobal.h; sourceTree = "<group>"; };
+		18CE2C0016B8648C00C60EC9 /* IPCHighLowChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCHighLowChart.h; sourceTree = "<group>"; };
+		18CE2C0116B8648C00C60EC9 /* IPCHistogramChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCHistogramChart.h; sourceTree = "<group>"; };
+		18CE2C0216B8648C00C60EC9 /* IPCITheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCITheme.h; sourceTree = "<group>"; };
+		18CE2C0316B8648C00C60EC9 /* IPCLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCLegend.h; sourceTree = "<group>"; };
+		18CE2C0416B8648C00C60EC9 /* IPCLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCLineChart.h; sourceTree = "<group>"; };
+		18CE2C0516B8648C00C60EC9 /* IPCLineXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCLineXYChart.h; sourceTree = "<group>"; };
+		18CE2C0616B8648C00C60EC9 /* IPCPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCPattern.h; sourceTree = "<group>"; };
+		18CE2C0716B8648C00C60EC9 /* IPCPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCPieChart.h; sourceTree = "<group>"; };
+		18CE2C0816B8648C00C60EC9 /* IPCRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRender.h; sourceTree = "<group>"; };
+		18CE2C0916B8648C00C60EC9 /* IPCRenderArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderArea.h; sourceTree = "<group>"; };
+		18CE2C0A16B8648C00C60EC9 /* IPCRenderAreaStacked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderAreaStacked.h; sourceTree = "<group>"; };
+		18CE2C0B16B8648C00C60EC9 /* IPCRenderAreaXY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderAreaXY.h; sourceTree = "<group>"; };
+		18CE2C0C16B8648C00C60EC9 /* IPCRenderAreaXYStacked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderAreaXYStacked.h; sourceTree = "<group>"; };
+		18CE2C0D16B8648C00C60EC9 /* IPCRenderBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderBar.h; sourceTree = "<group>"; };
+		18CE2C0E16B8648C00C60EC9 /* IPCRenderHighLow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderHighLow.h; sourceTree = "<group>"; };
+		18CE2C0F16B8648C00C60EC9 /* IPCRenderHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderHistogram.h; sourceTree = "<group>"; };
+		18CE2C1016B8648C00C60EC9 /* IPCRenderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderLine.h; sourceTree = "<group>"; };
+		18CE2C1116B8648C00C60EC9 /* IPCRenderLineXY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderLineXY.h; sourceTree = "<group>"; };
+		18CE2C1216B8648C00C60EC9 /* IPCRenderPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderPie.h; sourceTree = "<group>"; };
+		18CE2C1316B8648C00C60EC9 /* IPCRenderPie3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderPie3D.h; sourceTree = "<group>"; };
+		18CE2C1416B8648C00C60EC9 /* IPCRenderScatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderScatter.h; sourceTree = "<group>"; };
+		18CE2C1516B8648C00C60EC9 /* IPCRenderTimeSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCRenderTimeSeries.h; sourceTree = "<group>"; };
+		18CE2C1616B8648C00C60EC9 /* IPCScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCScatterChart.h; sourceTree = "<group>"; };
+		18CE2C1716B8648C00C60EC9 /* IPCTimeAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCTimeAxis.h; sourceTree = "<group>"; };
+		18CE2C1816B8648C00C60EC9 /* IPCTimeSeriesChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCTimeSeriesChart.h; sourceTree = "<group>"; };
+		18CE2C1916B8648C00C60EC9 /* IPCTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCTitle.h; sourceTree = "<group>"; };
+		18CE2C1A16B8648C00C60EC9 /* IPCValueAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCValueAxis.h; sourceTree = "<group>"; };
+		18CE2C1B16B8648C00C60EC9 /* IPCXYRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCXYRender.h; sourceTree = "<group>"; };
+		18CE2C1C16B8648C00C60EC9 /* IPhoneCharting_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhoneCharting_Prefix.pch; sourceTree = "<group>"; };
 		18CF404C16B1E1FF007923FE /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		18CF405716B1E567007923FE /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		18CF405816B1E568007923FE /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
@@ -261,6 +453,7 @@
 				7C193C1616B12263002E2D44 /* CoreData.framework in Frameworks */,
 				18B732A716B82A1200B25691 /* ShinobiCharts.framework in Frameworks */,
 				18B7335B16B846CD00B25691 /* ShinobiGrids.framework in Frameworks */,
+				18CE2C1D16B8648C00C60EC9 /* libIPhoneCharting.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +697,222 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
+		18CE2AD316B8620300C60EC9 /* KeepEdge */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B9916B8648C00C60EC9 /* libIPhoneCharting.a */,
+				18CE2B9A16B8648C00C60EC9 /* usr */,
+				18CE2B6216B8635000C60EC9 /* iphonechartdemo */,
+			);
+			path = KeepEdge;
+			sourceTree = "<group>";
+		};
+		18CE2B5916B8626900C60EC9 /* KeepEdgeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B5A16B8628C00C60EC9 /* KeepEdgeController.h */,
+				18CE2B5B16B8628C00C60EC9 /* KeepEdgeController.m */,
+				18CE2B5C16B8628C00C60EC9 /* KeepEdgeController.xib */,
+				18CE2B5F16B862FF00C60EC9 /* KeepEdgeView.h */,
+				18CE2B6016B862FF00C60EC9 /* KeepEdgeView.m */,
+			);
+			path = KeepEdgeControllers;
+			sourceTree = "<group>";
+		};
+		18CE2B6216B8635000C60EC9 /* iphonechartdemo */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B6316B8635000C60EC9 /* DemoAreaChart.h */,
+				18CE2B6416B8635000C60EC9 /* DemoAreaChart.m */,
+				18CE2B6516B8635000C60EC9 /* DemoAreaStackedChart.h */,
+				18CE2B6616B8635000C60EC9 /* DemoAreaStackedChart.m */,
+				18CE2B6716B8635000C60EC9 /* DemoAreaXYChart.h */,
+				18CE2B6816B8635000C60EC9 /* DemoAreaXYChart.m */,
+				18CE2B6916B8635000C60EC9 /* DemoAreaXYStackedChart.h */,
+				18CE2B6A16B8635000C60EC9 /* DemoAreaXYStackedChart.m */,
+				18CE2B6B16B8635000C60EC9 /* DemoBar3DChart.h */,
+				18CE2B6C16B8635000C60EC9 /* DemoBar3DChart.m */,
+				18CE2B6D16B8635000C60EC9 /* DemoBarChart.h */,
+				18CE2B6E16B8635000C60EC9 /* DemoBarChart.m */,
+				18CE2B6F16B8635000C60EC9 /* DemoBarStacked3DChart.h */,
+				18CE2B7016B8635000C60EC9 /* DemoBarStacked3DChart.m */,
+				18CE2B7116B8635000C60EC9 /* DemoBarStackedChart.h */,
+				18CE2B7216B8635000C60EC9 /* DemoBarStackedChart.m */,
+				18CE2B7316B8635000C60EC9 /* DemoBarStackedPercentage3DChart.h */,
+				18CE2B7416B8635000C60EC9 /* DemoBarStackedPercentage3DChart.m */,
+				18CE2B7516B8635000C60EC9 /* DemoBarStackedPercentageChart.h */,
+				18CE2B7616B8635000C60EC9 /* DemoBarStackedPercentageChart.m */,
+				18CE2B7716B8635000C60EC9 /* DemoHighLowChart.h */,
+				18CE2B7816B8635000C60EC9 /* DemoHighLowChart.m */,
+				18CE2B7916B8635000C60EC9 /* DemoHistogramChart.h */,
+				18CE2B7A16B8635000C60EC9 /* DemoHistogramChart.m */,
+				18CE2B7B16B8635000C60EC9 /* DemoLineChart.h */,
+				18CE2B7C16B8635000C60EC9 /* DemoLineChart.m */,
+				18CE2B7D16B8635000C60EC9 /* DemoLineXYChart.h */,
+				18CE2B7E16B8635000C60EC9 /* DemoLineXYChart.m */,
+				18CE2B7F16B8635000C60EC9 /* DemoMultiAxesChart.h */,
+				18CE2B8016B8635000C60EC9 /* DemoMultiAxesChart.m */,
+				18CE2B8116B8635000C60EC9 /* DemoPieChart.h */,
+				18CE2B8216B8635000C60EC9 /* DemoPieChart.m */,
+				18CE2B8316B8635000C60EC9 /* DemoScatterChart.h */,
+				18CE2B8416B8635000C60EC9 /* DemoScatterChart.m */,
+				18CE2B8516B8635000C60EC9 /* DemoTimeSeriesChart.h */,
+				18CE2B8616B8635000C60EC9 /* DemoTimeSeriesChart.m */,
+			);
+			path = iphonechartdemo;
+			sourceTree = "<group>";
+		};
+		18CE2B9A16B8648C00C60EC9 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B9B16B8648C00C60EC9 /* local */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		18CE2B9B16B8648C00C60EC9 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B9C16B8648C00C60EC9 /* include */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		18CE2B9C16B8648C00C60EC9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18CE2B9D16B8648C00C60EC9 /* DTCAbstractDataset.h */,
+				18CE2B9E16B8648C00C60EC9 /* DTCAbstractIntervalXYDataset.h */,
+				18CE2B9F16B8648C00C60EC9 /* DTCAbstractSeriesDataset.h */,
+				18CE2BA016B8648C00C60EC9 /* DTCAbstractXYDataset.h */,
+				18CE2BA116B8648C00C60EC9 /* DTCAbstractXYZDataset.h */,
+				18CE2BA216B8648C00C60EC9 /* DTCComparableObjectItem.h */,
+				18CE2BA316B8648C00C60EC9 /* DTCComparableObjectSeries.h */,
+				18CE2BA416B8648C00C60EC9 /* DTCDatasetGroup.h */,
+				18CE2BA516B8648C00C60EC9 /* DTCDatasetUtilities.h */,
+				18CE2BA616B8648C00C60EC9 /* DTCDataUtilities.h */,
+				18CE2BA716B8648C00C60EC9 /* DTCDateRange.h */,
+				18CE2BA816B8648C00C60EC9 /* DTCDay.h */,
+				18CE2BA916B8648C00C60EC9 /* DTCDefaultCategoryDataset.h */,
+				18CE2BAA16B8648C00C60EC9 /* DTCDefaultKeyedValue.h */,
+				18CE2BAB16B8648C00C60EC9 /* DTCDefaultKeyedValues.h */,
+				18CE2BAC16B8648C00C60EC9 /* DTCDefaultKeyedValues2D.h */,
+				18CE2BAD16B8648C00C60EC9 /* DTCDefaultOHLCDataset.h */,
+				18CE2BAE16B8648C00C60EC9 /* DTCDefaultPieDataset.h */,
+				18CE2BAF16B8648C00C60EC9 /* DTCDefaultTableXYDataset.h */,
+				18CE2BB016B8648C00C60EC9 /* DTCDefaultXYZDataset.h */,
+				18CE2BB116B8648C00C60EC9 /* DTCDomainOrder.h */,
+				18CE2BB216B8648C00C60EC9 /* DTCFixedMillisecond.h */,
+				18CE2BB316B8648C00C60EC9 /* DTCHistogramBin.h */,
+				18CE2BB416B8648C00C60EC9 /* DTCHistogramDataset.h */,
+				18CE2BB516B8648C00C60EC9 /* DTCHistogramType.h */,
+				18CE2BB616B8648C00C60EC9 /* DTCHour.h */,
+				18CE2BB716B8648C00C60EC9 /* DTCICategoryDataset.h */,
+				18CE2BB816B8648C00C60EC9 /* DTCIComparable.h */,
+				18CE2BB916B8648C00C60EC9 /* DTCIDataset.h */,
+				18CE2BBA16B8648C00C60EC9 /* DTCIDomainInfo.h */,
+				18CE2BBB16B8648C00C60EC9 /* DTCIGanttCategoryDataset.h */,
+				18CE2BBC16B8648C00C60EC9 /* DTCIIntervalCategoryDataset.h */,
+				18CE2BBD16B8648C00C60EC9 /* DTCIIntervalXYDataset.h */,
+				18CE2BBE16B8648C00C60EC9 /* DTCIKeyedValue.h */,
+				18CE2BBF16B8648C00C60EC9 /* DTCIKeyedValues.h */,
+				18CE2BC016B8648C00C60EC9 /* DTCIKeyedValues2D.h */,
+				18CE2BC116B8648C00C60EC9 /* DTCIMonthConstants.h */,
+				18CE2BC216B8648C00C60EC9 /* DTCIntervalXYDelegate.h */,
+				18CE2BC316B8648C00C60EC9 /* DTCIOHLCDataset.h */,
+				18CE2BC416B8648C00C60EC9 /* DTCIPieDataset.h */,
+				18CE2BC516B8648C00C60EC9 /* DTCIRangeInfo.h */,
+				18CE2BC616B8648C00C60EC9 /* DTCISeriesDataset.h */,
+				18CE2BC716B8648C00C60EC9 /* DTCITableXYDataset.h */,
+				18CE2BC816B8648C00C60EC9 /* DTCITimeline.h */,
+				18CE2BC916B8648C00C60EC9 /* DTCITimePeriod.h */,
+				18CE2BCA16B8648C00C60EC9 /* DTCIValue.h */,
+				18CE2BCB16B8648C00C60EC9 /* DTCIValues.h */,
+				18CE2BCC16B8648C00C60EC9 /* DTCIValues2D.h */,
+				18CE2BCD16B8648C00C60EC9 /* DTCIXYDataset.h */,
+				18CE2BCE16B8648C00C60EC9 /* DTCIXYZDataset.h */,
+				18CE2BCF16B8648C00C60EC9 /* DTCMillisecond.h */,
+				18CE2BD016B8648C00C60EC9 /* DTCMinute.h */,
+				18CE2BD116B8648C00C60EC9 /* DTCMonth.h */,
+				18CE2BD216B8648C00C60EC9 /* DTCOHLC.h */,
+				18CE2BD316B8648C00C60EC9 /* DTCOHLCItem.h */,
+				18CE2BD416B8648C00C60EC9 /* DTCOHLCSeries.h */,
+				18CE2BD516B8648C00C60EC9 /* DTCOHLCSeriesCollection.h */,
+				18CE2BD616B8648C00C60EC9 /* DTCRange.h */,
+				18CE2BD716B8648C00C60EC9 /* DTCRangeType.h */,
+				18CE2BD816B8648C00C60EC9 /* DTCRegularTimePeriod.h */,
+				18CE2BD916B8648C00C60EC9 /* DTCSecond.h */,
+				18CE2BDA16B8648C00C60EC9 /* DTCSegmentedTimeline.h */,
+				18CE2BDB16B8648C00C60EC9 /* DTCSerialDate.h */,
+				18CE2BDC16B8648C00C60EC9 /* DTCSeries.h */,
+				18CE2BDD16B8648C00C60EC9 /* DTCSimpleTimePeriod.h */,
+				18CE2BDE16B8648C00C60EC9 /* DTCSortOrder.h */,
+				18CE2BDF16B8648C00C60EC9 /* DTCSpreadsheetDate.h */,
+				18CE2BE016B8648C00C60EC9 /* DTCStroke.h */,
+				18CE2BE116B8648C00C60EC9 /* DTCTask.h */,
+				18CE2BE216B8648C00C60EC9 /* DTCTaskSeries.h */,
+				18CE2BE316B8648C00C60EC9 /* DTCTaskSeriesCollection.h */,
+				18CE2BE416B8648C00C60EC9 /* DTCTimePeriodAnchor.h */,
+				18CE2BE516B8648C00C60EC9 /* DTCTimeSeries.h */,
+				18CE2BE616B8648C00C60EC9 /* DTCTimeSeriesCollection.h */,
+				18CE2BE716B8648C00C60EC9 /* DTCTimeSeriesDataItem.h */,
+				18CE2BE816B8648C00C60EC9 /* DTCWeek.h */,
+				18CE2BE916B8648C00C60EC9 /* DTCXYDataItem.h */,
+				18CE2BEA16B8648C00C60EC9 /* DTCXYSeries.h */,
+				18CE2BEB16B8648C00C60EC9 /* DTCXYSeriesCollection.h */,
+				18CE2BEC16B8648C00C60EC9 /* DTCYear.h */,
+				18CE2BED16B8648C00C60EC9 /* IPCAbstractAxis.h */,
+				18CE2BEE16B8648C00C60EC9 /* IPCAbstractBarChart.h */,
+				18CE2BEF16B8648C00C60EC9 /* IPCAbstractCategoryChart.h */,
+				18CE2BF016B8648C00C60EC9 /* IPCAbstractChart.h */,
+				18CE2BF116B8648C00C60EC9 /* IPCAbstractXYChart.h */,
+				18CE2BF216B8648C00C60EC9 /* IPCAreaChart.h */,
+				18CE2BF316B8648C00C60EC9 /* IPCAreaStackedChart.h */,
+				18CE2BF416B8648C00C60EC9 /* IPCAreaXYChart.h */,
+				18CE2BF516B8648C00C60EC9 /* IPCAreaXYStackedChart.h */,
+				18CE2BF616B8648C00C60EC9 /* IPCBar3DChart.h */,
+				18CE2BF716B8648C00C60EC9 /* IPCBarChart.h */,
+				18CE2BF816B8648C00C60EC9 /* IPCBarStacked3DChart.h */,
+				18CE2BF916B8648C00C60EC9 /* IPCBarStackedChart.h */,
+				18CE2BFA16B8648C00C60EC9 /* IPCBarStackedPercentage3DChart.h */,
+				18CE2BFB16B8648C00C60EC9 /* IPCBarStackedPercentageChart.h */,
+				18CE2BFC16B8648C00C60EC9 /* IPCCategoryAxis.h */,
+				18CE2BFD16B8648C00C60EC9 /* IPCCategoryRender.h */,
+				18CE2BFE16B8648C00C60EC9 /* IPCDefaultTheme.h */,
+				18CE2BFF16B8648C00C60EC9 /* IPCGlobal.h */,
+				18CE2C0016B8648C00C60EC9 /* IPCHighLowChart.h */,
+				18CE2C0116B8648C00C60EC9 /* IPCHistogramChart.h */,
+				18CE2C0216B8648C00C60EC9 /* IPCITheme.h */,
+				18CE2C0316B8648C00C60EC9 /* IPCLegend.h */,
+				18CE2C0416B8648C00C60EC9 /* IPCLineChart.h */,
+				18CE2C0516B8648C00C60EC9 /* IPCLineXYChart.h */,
+				18CE2C0616B8648C00C60EC9 /* IPCPattern.h */,
+				18CE2C0716B8648C00C60EC9 /* IPCPieChart.h */,
+				18CE2C0816B8648C00C60EC9 /* IPCRender.h */,
+				18CE2C0916B8648C00C60EC9 /* IPCRenderArea.h */,
+				18CE2C0A16B8648C00C60EC9 /* IPCRenderAreaStacked.h */,
+				18CE2C0B16B8648C00C60EC9 /* IPCRenderAreaXY.h */,
+				18CE2C0C16B8648C00C60EC9 /* IPCRenderAreaXYStacked.h */,
+				18CE2C0D16B8648C00C60EC9 /* IPCRenderBar.h */,
+				18CE2C0E16B8648C00C60EC9 /* IPCRenderHighLow.h */,
+				18CE2C0F16B8648C00C60EC9 /* IPCRenderHistogram.h */,
+				18CE2C1016B8648C00C60EC9 /* IPCRenderLine.h */,
+				18CE2C1116B8648C00C60EC9 /* IPCRenderLineXY.h */,
+				18CE2C1216B8648C00C60EC9 /* IPCRenderPie.h */,
+				18CE2C1316B8648C00C60EC9 /* IPCRenderPie3D.h */,
+				18CE2C1416B8648C00C60EC9 /* IPCRenderScatter.h */,
+				18CE2C1516B8648C00C60EC9 /* IPCRenderTimeSeries.h */,
+				18CE2C1616B8648C00C60EC9 /* IPCScatterChart.h */,
+				18CE2C1716B8648C00C60EC9 /* IPCTimeAxis.h */,
+				18CE2C1816B8648C00C60EC9 /* IPCTimeSeriesChart.h */,
+				18CE2C1916B8648C00C60EC9 /* IPCTitle.h */,
+				18CE2C1A16B8648C00C60EC9 /* IPCValueAxis.h */,
+				18CE2C1B16B8648C00C60EC9 /* IPCXYRender.h */,
+				18CE2C1C16B8648C00C60EC9 /* IPhoneCharting_Prefix.pch */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		18CF404B16B1E1DF007923FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +1029,7 @@
 		7C3055D916B67C9400BFA132 /* NativeControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18CE2B5916B8626900C60EC9 /* KeepEdgeControllers */,
 				18B7334F16B8441A00B25691 /* ShinobiGridsControllers */,
 				18B732B016B82C3D00B25691 /* ShinobiChartsControllers */,
 				7C3055E116B67E3000BFA132 /* PieChartController.h */,
@@ -635,6 +1045,7 @@
 		7C3055E616B67ED200BFA132 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				18CE2AD316B8620300C60EC9 /* KeepEdge */,
 				18B732A416B829CB00B25691 /* ShinobiCharts */,
 				7CC8BD5316B799DE0019C59F /* iOSPlot */,
 				7C3055E716B67EF500BFA132 /* XYPieChart */,
@@ -761,6 +1172,7 @@
 				18B7338516B84DFC00B25691 /* icon.png in Resources */,
 				18B7338616B84DFC00B25691 /* logo.png in Resources */,
 				18B7338C16B84E0D00B25691 /* SectionsController.xib in Resources */,
+				18CE2B5E16B8628C00C60EC9 /* KeepEdgeController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +1228,26 @@
 				18B7338716B84DFC00B25691 /* Stock.m in Sources */,
 				18B7338B16B84E0D00B25691 /* SectionsController.m in Sources */,
 				18B7338F16B8528200B25691 /* DataSource11.m in Sources */,
+				18CE2B5D16B8628C00C60EC9 /* KeepEdgeController.m in Sources */,
+				18CE2B6116B862FF00C60EC9 /* KeepEdgeView.m in Sources */,
+				18CE2B8716B8635000C60EC9 /* DemoAreaChart.m in Sources */,
+				18CE2B8816B8635000C60EC9 /* DemoAreaStackedChart.m in Sources */,
+				18CE2B8916B8635000C60EC9 /* DemoAreaXYChart.m in Sources */,
+				18CE2B8A16B8635000C60EC9 /* DemoAreaXYStackedChart.m in Sources */,
+				18CE2B8B16B8635000C60EC9 /* DemoBar3DChart.m in Sources */,
+				18CE2B8C16B8635000C60EC9 /* DemoBarChart.m in Sources */,
+				18CE2B8D16B8635000C60EC9 /* DemoBarStacked3DChart.m in Sources */,
+				18CE2B8E16B8635000C60EC9 /* DemoBarStackedChart.m in Sources */,
+				18CE2B8F16B8635000C60EC9 /* DemoBarStackedPercentage3DChart.m in Sources */,
+				18CE2B9016B8635000C60EC9 /* DemoBarStackedPercentageChart.m in Sources */,
+				18CE2B9116B8635000C60EC9 /* DemoHighLowChart.m in Sources */,
+				18CE2B9216B8635000C60EC9 /* DemoHistogramChart.m in Sources */,
+				18CE2B9316B8635000C60EC9 /* DemoLineChart.m in Sources */,
+				18CE2B9416B8635000C60EC9 /* DemoLineXYChart.m in Sources */,
+				18CE2B9516B8635000C60EC9 /* DemoMultiAxesChart.m in Sources */,
+				18CE2B9616B8635000C60EC9 /* DemoPieChart.m in Sources */,
+				18CE2B9716B8635000C60EC9 /* DemoScatterChart.m in Sources */,
+				18CE2B9816B8635000C60EC9 /* DemoTimeSeriesChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,9 +1328,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BrandymintChart/Submodules/KeepEdge\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B2BFF109-E614-466F-9521-770668BD05E7";
+				PROVISIONING_PROFILE = "7629DBE4-5C92-452E-938C-6118B22587F7";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -915,9 +1351,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BrandymintChart/BrandymintChart-Prefix.pch";
 				INFOPLIST_FILE = "BrandymintChart/BrandymintChart-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BrandymintChart/Submodules/KeepEdge\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B2BFF109-E614-466F-9521-770668BD05E7";
+				PROVISIONING_PROFILE = "7629DBE4-5C92-452E-938C-6118B22587F7";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

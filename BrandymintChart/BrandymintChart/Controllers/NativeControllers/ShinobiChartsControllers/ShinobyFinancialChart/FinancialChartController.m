@@ -45,7 +45,7 @@
     } else {
         frame = self.view.bounds;
     }
-    
+    frame = self.baseView.bounds;
     //Create a chart object capable of displaying countries by area using bars
     financialChart = [ShinobiChart candlestickChartForStockData:frame];
     
@@ -64,9 +64,9 @@
     
     //Set this controller to be the delegate for our chart
     financialChart.delegate = self;
-    [self.view addSubview:financialChart];
+    [self.baseView addSubview:financialChart];
     
-    self.view.backgroundColor = financialChart.backgroundColor;
+    self.baseView.backgroundColor = financialChart.backgroundColor;
     
     firstChartRender = YES;
 }

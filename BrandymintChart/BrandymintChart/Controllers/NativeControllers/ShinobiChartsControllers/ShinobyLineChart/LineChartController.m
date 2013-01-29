@@ -31,7 +31,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //Create a chart object suitable for viewing our data
-    lineChart = [ShinobiChart lineChartForBrowserUsageWithFrame:self.view.bounds];
+    lineChart = [ShinobiChart lineChartForBrowserUsageWithFrame:self.baseView.bounds];
     lineChart.title = @"Mobile browser use";
     
     //Enter you trial license key here
@@ -47,11 +47,11 @@
     lineChart.delegate = self;
     
     //add our chart to the main view
-    [self.view addSubview:lineChart];
+    [self.baseView addSubview:lineChart];
     
     
     //fill our border with the same background as the chart
-    self.view.backgroundColor = lineChart.backgroundColor;
+    self.baseView.backgroundColor = lineChart.backgroundColor;
 }
 
 - (void)didReceiveMemoryWarning

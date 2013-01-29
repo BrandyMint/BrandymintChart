@@ -47,7 +47,7 @@
     
     [self.baseView addSubview:columnChart];
     
-    self.view.backgroundColor = columnChart.theme.chartStyle.backgroundColor;
+    self.baseView.backgroundColor = columnChart.theme.chartStyle.backgroundColor;
 }
 
 - (void)didReceiveMemoryWarning

@@ -22,6 +22,8 @@
 #import "LargeDataController2.h"
 #import "SectionsController.h"
 
+#import "KeepEdgeController.h"
+
 @interface DetailViewController ()
 @property (nonatomic, strong) NSMutableArray *pageViews;
 @end
@@ -316,6 +318,18 @@
             SectionsController *myPieController2 = [[SectionsController alloc]
                                                      initWithNibName:@"SectionsController" bundle:[NSBundle mainBundle]];
             controllers = [[NSMutableArray alloc] initWithObjects:myPieController, myPieController2, nil];
+        }
+        break;
+            
+        case 3:
+        {
+            controllers = [[NSMutableArray alloc] init];
+            for(int loop = 0; loop < 17; loop++)
+            {
+                KeepEdgeController *myPieController = [[KeepEdgeController alloc]
+                                                         initWithNibName:@"KeepEdgeController" bundle:[NSBundle mainBundle] indexIn:loop];
+                [controllers insertObject:myPieController atIndex:0];
+            }
         }
         break;
             

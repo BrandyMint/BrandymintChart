@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     //Create a chart object that displays medal data using stacked areas
-    areaChart = [ShinobiChart areaChartWithFrame:self.view.bounds];
+    areaChart = [ShinobiChart areaChartWithFrame:self.baseView.bounds];
     areaChart.title = @"London 2012 - Medal Table Top Ten";
     
     //Enter your trial license key here
@@ -43,9 +43,9 @@
     areaChart.datasource = datasource;
     
     //add this chart to our main view
-    [self.view addSubview:areaChart];
+    [self.baseView addSubview:areaChart];
     
-    self.view.backgroundColor = areaChart.backgroundColor;
+    self.baseView.backgroundColor = areaChart.backgroundColor;
 }
 
 - (void)didReceiveMemoryWarning
