@@ -38,6 +38,12 @@
 		7CC8BD6216B79AFF0019C59F /* PlotWithLineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6016B79AFF0019C59F /* PlotWithLineController.xib */; };
 		7CC8BD6616B79F300019C59F /* sample_linechart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6416B79F300019C59F /* sample_linechart_data.json */; };
 		7CC8BD6716B79F300019C59F /* sample_piechart_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6516B79F300019C59F /* sample_piechart_data.plist */; };
+		7CC8BE2516B7F8510019C59F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE2116B7F8510019C59F /* Icon-72.png */; };
+		7CC8BE2616B7F8510019C59F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE2216B7F8510019C59F /* Icon-72@2x.png */; };
+		7CC8BE2716B7F8510019C59F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE2316B7F8510019C59F /* Icon-Small-50.png */; };
+		7CC8BE2816B7F8510019C59F /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE2416B7F8510019C59F /* Icon-Small-50@2x.png */; };
+		7CC8BE4A16B80EF70019C59F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE4816B80EF70019C59F /* Icon.png */; };
+		7CC8BE4B16B80EF70019C59F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BE4916B80EF70019C59F /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +95,12 @@
 		7CC8BD6016B79AFF0019C59F /* PlotWithLineController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlotWithLineController.xib; sourceTree = "<group>"; };
 		7CC8BD6416B79F300019C59F /* sample_linechart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_linechart_data.json; sourceTree = "<group>"; };
 		7CC8BD6516B79F300019C59F /* sample_piechart_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample_piechart_data.plist; sourceTree = "<group>"; };
+		7CC8BE2116B7F8510019C59F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7CC8BE2216B7F8510019C59F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		7CC8BE2316B7F8510019C59F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		7CC8BE2416B7F8510019C59F /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		7CC8BE4816B80EF70019C59F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7CC8BE4916B80EF70019C59F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,12 @@
 		7C193C1816B12263002E2D44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7CC8BE4816B80EF70019C59F /* Icon.png */,
+				7CC8BE4916B80EF70019C59F /* Icon@2x.png */,
+				7CC8BE2116B7F8510019C59F /* Icon-72.png */,
+				7CC8BE2216B7F8510019C59F /* Icon-72@2x.png */,
+				7CC8BE2316B7F8510019C59F /* Icon-Small-50.png */,
+				7CC8BE2416B7F8510019C59F /* Icon-Small-50@2x.png */,
 				7C193C1916B12263002E2D44 /* BrandymintChart-Info.plist */,
 				7C193C1A16B12263002E2D44 /* InfoPlist.strings */,
 				7C193C1D16B12263002E2D44 /* main.m */,
@@ -327,6 +345,12 @@
 				7CC8BD6216B79AFF0019C59F /* PlotWithLineController.xib in Resources */,
 				7CC8BD6616B79F300019C59F /* sample_linechart_data.json in Resources */,
 				7CC8BD6716B79F300019C59F /* sample_piechart_data.plist in Resources */,
+				7CC8BE2516B7F8510019C59F /* Icon-72.png in Resources */,
+				7CC8BE2616B7F8510019C59F /* Icon-72@2x.png in Resources */,
+				7CC8BE2716B7F8510019C59F /* Icon-Small-50.png in Resources */,
+				7CC8BE2816B7F8510019C59F /* Icon-Small-50@2x.png in Resources */,
+				7CC8BE4A16B80EF70019C59F /* Icon.png in Resources */,
+				7CC8BE4B16B80EF70019C59F /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
