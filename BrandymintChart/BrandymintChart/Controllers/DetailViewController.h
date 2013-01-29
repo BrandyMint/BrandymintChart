@@ -16,7 +16,10 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollCards;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *btnBar;
 
 -(IBAction) showLeftPanel:(id)sender;
+
+-(void) reconfigurationController:(int)index;
 
 @end

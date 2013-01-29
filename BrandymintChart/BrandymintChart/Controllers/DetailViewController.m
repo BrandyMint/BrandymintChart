@@ -10,6 +10,7 @@
 #import "CardViewController.h"
 
 #import "PieChartController.h"
+#import "PlotWithLineController.h"
 
 @interface DetailViewController ()
 @property (nonatomic, strong) NSMutableArray *pageViews;
@@ -24,6 +25,8 @@
     CGRect scrollViewRect;
     CGRect scrollViewRectIncrease;
     CGRect innerViewRect;
+    
+    NSMutableArray *controllers;
 }
 
 @synthesize scrollCards;
@@ -42,10 +45,11 @@
     scrollViewRect = scrollCards.frame;
     scrollViewRectIncrease = CGRectMake(0, scrollViewRect.origin.y, self.view.frame.size.width - OPEN_MASTER_SPLITVIEW_POSITION , scrollViewRect.size.height);
     
-    [self initScrollCards];
+    [self reconfigurationController:0];
+    //[self initScrollCards];
     
-    CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
-    [curController reloadCurrentController];
+    //CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
+    //[curController reloadCurrentController];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,17 +75,19 @@
 
 -(IBAction) showLeftPanel:(id)sender
 {
-    UIBarButtonItem *btn = (UIBarButtonItem*)sender;
+    UIBarButtonItem *btn = self.btnBar;
     
     stateLeftPanel = !stateLeftPanel;
 
     if(stateLeftPanel == YES)   {
+        NSLog(@"show master panel");
         //[splitController setSplitPosition:OPEN_MASTER_SPLITVIEW_POSITION animated:YES];
         scrollCards.clipsToBounds = YES;
         [self animateIncreaseWindows];
         btn.title = @"Скрыть";
     }
     else    {
+        NSLog(@"hide master panel");
         //[splitController setSplitPosition:CLOSE_MASTER_SPLITVIEW_POSITION animated:YES];
         [self animateDecreaseWindows];
         btn.title = @"Показать";
@@ -93,15 +99,27 @@
     scrollCards.scrollEnabled = YES;
     [self showAllWindowInScrollView];
     
-    UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
-    
-    [UIView animateWithDuration:CLOSE_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
-        splitController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
-        scrollCards.frame = scrollViewRect;
-        curView.frame = innerViewRect;
+    if(self.pageViews.count > 0)
+    {
+        UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
+        
+        [UIView animateWithDuration:CLOSE_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+            splitController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
+            scrollCards.frame = scrollViewRect;
+            curView.frame = innerViewRect;
+            }completion:^(BOOL finished) {
+            scrollCards.clipsToBounds = NO;
+        }];
+    }
+    else
+    {
+        [UIView animateWithDuration:CLOSE_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+            splitController.splitPosition = CLOSE_MASTER_SPLITVIEW_POSITION;
+            scrollCards.frame = scrollViewRect;
         }completion:^(BOOL finished) {
-        scrollCards.clipsToBounds = NO;
-    }];
+            scrollCards.clipsToBounds = NO;
+        }];
+    }
 }
 
 -(void) animateIncreaseWindows
@@ -109,16 +127,28 @@
     scrollCards.scrollEnabled = NO;
     [self hideAllWindowWithoutIndexInScrollView:curPage];
     
-    UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
-    innerViewRect = curView.frame;
+    if(self.pageViews.count > 0)
+    {
+        UIView* curView = ((UIViewController*)[self.pageViews objectAtIndex:curPage]).view;
+        innerViewRect = curView.frame;
 
-    [UIView animateWithDuration:OPEN_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
-        splitController.splitPosition = OPEN_MASTER_SPLITVIEW_POSITION;
-        scrollCards.frame = scrollViewRectIncrease;
-        curView.frame = CGRectMake(innerViewRect.origin.x - 13.5, 0, scrollViewRectIncrease.size.width, scrollViewRectIncrease.size.height);    //ofs in next function = 13.5
-    }completion:^(BOOL finished) {
-        
-    }];
+        [UIView animateWithDuration:OPEN_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+            splitController.splitPosition = OPEN_MASTER_SPLITVIEW_POSITION;
+            scrollCards.frame = scrollViewRectIncrease;
+            curView.frame = CGRectMake(innerViewRect.origin.x - 13.5, 0, scrollViewRectIncrease.size.width, scrollViewRectIncrease.size.height);    //ofs in next function = 13.5
+        }completion:^(BOOL finished) {
+            
+        }];
+    }
+    else
+    {
+        [UIView animateWithDuration:OPEN_MASTER_SPLITVIEW_POSITION_DURATION animations:^(void) {
+            splitController.splitPosition = OPEN_MASTER_SPLITVIEW_POSITION;
+            scrollCards.frame = scrollViewRectIncrease;
+        }completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
 -(void) hideAllWindowWithoutIndexInScrollView:(int)index
@@ -142,6 +172,10 @@
 
 -(void) initScrollCards
 {
+    NSLog(@"init scroll cards");
+    
+    //Обнуляем все переменные используемые в процессе дальнейшей работы
+    curPage = 0;
     self.pageViews = [[NSMutableArray alloc] init];
     
     for (UIView *v in scrollCards.subviews) {
@@ -151,9 +185,9 @@
     CGFloat itemWidth = self.scrollCards.frame.size.width;
     CGFloat cardWidth = 877;
     CGFloat ofs = (itemWidth-cardWidth)/2;
-    NSLog(@"ofs=%f", ofs);
     
-    for(int loop = 0; loop < 10; loop++)
+    NSLog(@"showing controllers = %i", controllers.count);
+    for(int loop = 0; loop < controllers.count; loop++)
     {
         CGRect frame;
         
@@ -162,31 +196,38 @@
         frame.size.width = cardWidth;
         frame.size.height = self.scrollCards.frame.size.height - 40;
         
-        /*CardViewController *myController = [[CardViewController alloc]
-                                                initWithNibName:@"CardViewController" bundle:[NSBundle mainBundle]];
-        myController.view.frame = frame;*/
-        
-        PieChartController *myController = [[PieChartController alloc]
-                                            initWithNibName:@"PieChartController" bundle:[NSBundle mainBundle]];
+        CardViewController *myController = [controllers objectAtIndex:loop];
         myController.view.frame = frame;
         
         [self.pageViews addObject:myController];
         [self.scrollCards addSubview:myController.view];
     }
 
-    self.scrollCards.contentSize = CGSizeMake(itemWidth * 10,
+    NSLog(@"showing pageView = %i", self.pageViews.count);
+    
+    self.scrollCards.contentSize = CGSizeMake(itemWidth * controllers.count,
                                               self.scrollCards.frame.size.height);
+    scrollCards.contentOffset = CGPointMake(0, 0);  //Перематываем на первый элемент при каждой инициализации
+    
+    if(controllers.count > 0)   {
+        CardViewController *curController = (CardViewController *)[self.pageViews objectAtIndex:0];
+        [curController reloadCurrentController];
+    }
     
     [self updatePageAlpha:0];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
     
+    if(self.pageViews.count == 0)
+        return;
+    
     CGFloat pageWidth = self.scrollCards.frame.size.width;
     CGFloat scrollOfs = self.scrollCards.contentOffset.x;
     
     int curPageIndex = floor(scrollOfs/pageWidth - 0.5) + 1;
     
+    NSLog(@"current page=%i last page=%i", curPageIndex, curPage);
     if(curPageIndex != curPage) {
         [((CardViewController*)[self.pageViews objectAtIndex:curPageIndex]) reloadCurrentController];
         
@@ -210,14 +251,45 @@
 
 -(void)updatePageAlpha:(int)pageIndex
 {
+    if(self.pageViews.count == 0)
+        return;
+    
     if (pageIndex > 0){
         UIView* v = ((UIViewController*)[self.pageViews objectAtIndex:pageIndex-1]).view;
         v.alpha = 0.5f;
     }
-    if (pageIndex < self.pageViews.count - 1){
+    if (pageIndex < self.pageViews.count - 1)  {
+        NSLog(@"%i < %i", pageIndex, self.pageViews.count-1);
         UIView* v = ((UIViewController*)[self.pageViews objectAtIndex:pageIndex+1]).view;
         v.alpha = 0.5f;
     }
+}
+
+
+-(void) reconfigurationController:(int)index
+{
+    switch (index) {
+        case 0:
+        {
+            PieChartController *myPieController = [[PieChartController alloc]
+                                                   initWithNibName:@"PieChartController" bundle:[NSBundle mainBundle]];
+            PlotWithLineController *myPlotWithLine = [[PlotWithLineController alloc]
+                                                      initWithNibName:@"PlotWithLineController" bundle:[NSBundle mainBundle]];
+            
+            controllers = [[NSMutableArray alloc] initWithObjects:myPieController, myPlotWithLine, nil];
+        }
+        break;
+            
+        default:
+            [controllers removeAllObjects];
+            break;
+    }
+    
+    if(stateLeftPanel == YES) {
+        [self showLeftPanel:nil];
+    }
+    
+    [self initScrollCards];
 }
 
 @end

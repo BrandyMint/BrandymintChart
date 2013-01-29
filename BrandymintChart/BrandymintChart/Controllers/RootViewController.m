@@ -7,14 +7,27 @@
 //
 
 #import "RootViewController.h"
+#import "DetailViewController.h"
 
 @implementation RootViewController
+{
+    NSArray *arrayTitle;
+    NSArray *arrayDescription;
+}
 
 @synthesize detailViewController;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    arrayTitle = [[NSArray alloc] initWithObjects:@"iOS Plot", nil];
+    arrayDescription = [[NSArray alloc] initWithObjects:@"native library", nil];
+}
+
+-(void) viewWillAppear:(BOOL)animated
+{
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 
@@ -43,7 +56,7 @@
 - (NSInteger)tableView:(UITableView *)aTableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return arrayTitle.count;
 }
 
 
@@ -55,13 +68,19 @@
     // Dequeue or create a cell of the appropriate type.
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
     // Configure the cell.
-    cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+    cell.textLabel.text = [arrayTitle objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = [arrayDescription objectAtIndex:indexPath.row];
     return cell;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.detailViewController reconfigurationController:indexPath.row];
 }
 
 @end

@@ -31,6 +31,13 @@
 		7C3055E516B67E3000BFA132 /* PieChartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C3055E316B67E3000BFA132 /* PieChartController.xib */; };
 		7C3055EA16B67F0A00BFA132 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3055E916B67F0A00BFA132 /* XYPieChart.m */; };
 		7C3055EC16B6857500BFA132 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3055EB16B6857500BFA132 /* QuartzCore.framework */; };
+		7CC8BD5916B79A960019C59F /* PCLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BD5616B79A960019C59F /* PCLineChartView.m */; };
+		7CC8BD5A16B79A960019C59F /* PCPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BD5816B79A960019C59F /* PCPieChart.m */; };
+		7CC8BD5D16B79AB50019C59F /* PCHalfPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BD5C16B79AB50019C59F /* PCHalfPieChart.m */; };
+		7CC8BD6116B79AFF0019C59F /* PlotWithLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BD5F16B79AFF0019C59F /* PlotWithLineController.m */; };
+		7CC8BD6216B79AFF0019C59F /* PlotWithLineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6016B79AFF0019C59F /* PlotWithLineController.xib */; };
+		7CC8BD6616B79F300019C59F /* sample_linechart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6416B79F300019C59F /* sample_linechart_data.json */; };
+		7CC8BD6716B79F300019C59F /* sample_piechart_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8BD6516B79F300019C59F /* sample_piechart_data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +78,17 @@
 		7C3055E816B67F0A00BFA132 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		7C3055E916B67F0A00BFA132 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		7C3055EB16B6857500BFA132 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7CC8BD5516B79A960019C59F /* PCLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLineChartView.h; sourceTree = "<group>"; };
+		7CC8BD5616B79A960019C59F /* PCLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLineChartView.m; sourceTree = "<group>"; };
+		7CC8BD5716B79A960019C59F /* PCPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPieChart.h; sourceTree = "<group>"; };
+		7CC8BD5816B79A960019C59F /* PCPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPieChart.m; sourceTree = "<group>"; };
+		7CC8BD5B16B79AB50019C59F /* PCHalfPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHalfPieChart.h; sourceTree = "<group>"; };
+		7CC8BD5C16B79AB50019C59F /* PCHalfPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHalfPieChart.m; sourceTree = "<group>"; };
+		7CC8BD5E16B79AFF0019C59F /* PlotWithLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotWithLineController.h; sourceTree = "<group>"; };
+		7CC8BD5F16B79AFF0019C59F /* PlotWithLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotWithLineController.m; sourceTree = "<group>"; };
+		7CC8BD6016B79AFF0019C59F /* PlotWithLineController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlotWithLineController.xib; sourceTree = "<group>"; };
+		7CC8BD6416B79F300019C59F /* sample_linechart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_linechart_data.json; sourceTree = "<group>"; };
+		7CC8BD6516B79F300019C59F /* sample_piechart_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sample_piechart_data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +147,7 @@
 		7C193C1716B12263002E2D44 /* BrandymintChart */ = {
 			isa = PBXGroup;
 			children = (
+				7CC8BD6316B79F1A0019C59F /* Resources */,
 				7C3055E616B67ED200BFA132 /* Submodules */,
 				18CF404B16B1E1DF007923FE /* Common */,
 				7C193C4516B12709002E2D44 /* Controllers */,
@@ -199,6 +218,9 @@
 				7C3055E116B67E3000BFA132 /* PieChartController.h */,
 				7C3055E216B67E3000BFA132 /* PieChartController.m */,
 				7C3055E316B67E3000BFA132 /* PieChartController.xib */,
+				7CC8BD5E16B79AFF0019C59F /* PlotWithLineController.h */,
+				7CC8BD5F16B79AFF0019C59F /* PlotWithLineController.m */,
+				7CC8BD6016B79AFF0019C59F /* PlotWithLineController.xib */,
 			);
 			path = NativeControllers;
 			sourceTree = "<group>";
@@ -206,6 +228,7 @@
 		7C3055E616B67ED200BFA132 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				7CC8BD5316B799DE0019C59F /* iOSPlot */,
 				7C3055E716B67EF500BFA132 /* XYPieChart */,
 			);
 			path = Submodules;
@@ -218,6 +241,28 @@
 				7C3055E916B67F0A00BFA132 /* XYPieChart.m */,
 			);
 			path = XYPieChart;
+			sourceTree = "<group>";
+		};
+		7CC8BD5316B799DE0019C59F /* iOSPlot */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BD5B16B79AB50019C59F /* PCHalfPieChart.h */,
+				7CC8BD5C16B79AB50019C59F /* PCHalfPieChart.m */,
+				7CC8BD5516B79A960019C59F /* PCLineChartView.h */,
+				7CC8BD5616B79A960019C59F /* PCLineChartView.m */,
+				7CC8BD5716B79A960019C59F /* PCPieChart.h */,
+				7CC8BD5816B79A960019C59F /* PCPieChart.m */,
+			);
+			path = iOSPlot;
+			sourceTree = "<group>";
+		};
+		7CC8BD6316B79F1A0019C59F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BD6416B79F300019C59F /* sample_linechart_data.json */,
+				7CC8BD6516B79F300019C59F /* sample_piechart_data.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +324,9 @@
 				7C193C5216B12B77002E2D44 /* DetailViewController.xib in Resources */,
 				18CF405B16B1E568007923FE /* CardViewController.xib in Resources */,
 				7C3055E516B67E3000BFA132 /* PieChartController.xib in Resources */,
+				7CC8BD6216B79AFF0019C59F /* PlotWithLineController.xib in Resources */,
+				7CC8BD6616B79F300019C59F /* sample_linechart_data.json in Resources */,
+				7CC8BD6716B79F300019C59F /* sample_piechart_data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +348,10 @@
 				18CF405A16B1E568007923FE /* CardViewController.m in Sources */,
 				7C3055E416B67E3000BFA132 /* PieChartController.m in Sources */,
 				7C3055EA16B67F0A00BFA132 /* XYPieChart.m in Sources */,
+				7CC8BD5916B79A960019C59F /* PCLineChartView.m in Sources */,
+				7CC8BD5A16B79A960019C59F /* PCPieChart.m in Sources */,
+				7CC8BD5D16B79AB50019C59F /* PCHalfPieChart.m in Sources */,
+				7CC8BD6116B79AFF0019C59F /* PlotWithLineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
