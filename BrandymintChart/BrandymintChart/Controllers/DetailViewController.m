@@ -241,6 +241,7 @@
     
     NSLog(@"current page=%i last page=%i", curPageIndex, curPage);
     if(curPageIndex != curPage) {
+        
         [((CardViewController*)[self.pageViews objectAtIndex:curPageIndex]) reloadCurrentController];
         
         if(curPageIndex > curPage)  {
